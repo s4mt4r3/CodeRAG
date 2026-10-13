@@ -1,0 +1,9 @@
+# Manual browser check of the Streamlit app (Claude in Chrome), 2026-10-12
+Setup: `streamlit run src/coderag/streamlit_app.py --server.headless true --server.port 8598`, no API keys in the environment, CODERAG_DB_DIR pointed at a scratch directory.
+1. Page loaded at http://127.0.0.1:8598 with title "coderag"; demo mode toggle was on by default; the "reads files from this machine" banner and "About safety" expander were shown.
+2. "Use bundled example repo" set the path to tests/fixtures/fixture_repo; "Index" showed: "Indexed 13 files, 77 chunks (0 unchanged) from .../tests/fixtures/fixture_repo."
+3. Three example questions were generated from real symbols: "What does `slugify` do?", "Which functions call `clamp`?", "Where is `error_response` defined?"; clicking the first filled the question box.
+4. "Ask" (demo mode) rendered the info banner "Scripted pipeline demo, not a model answer: it searched, read the top hit, and cited it.", the answer "See shopcore/models.py.", and a citation expander "shopcore/models.py:23-24 handle".
+5. Expanding the citation showed a green "verified" badge and the cited code with real line numbers 23-24 (`def handle(self) -> str:` / `return slugify(self.name)`).
+Observation: the scripted policy cites the top BM25 hit, which for this question was the caller `Customer.handle` rather than `slugify` itself; this is the fixed demo policy, not a model.
+Not checked in the browser: a real provider (no keys), the error panels (covered by AppTest), the hybrid retriever.

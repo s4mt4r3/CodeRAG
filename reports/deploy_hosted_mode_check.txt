@@ -1,0 +1,9 @@
+# Hosted-mode check in the clean copy (CODERAG_HOSTED=1, empty environment, cwd = repo root)
+exceptions: []
+providers offered: ['anthropic', 'openai', 'gemini', 'groq', 'together', 'openrouter', 'openai_compatible']
+retrievers offered: ['BM25 (recommended)']
+repo path default exists: True
+index result: ['Indexed 13 files, 77 chunks (0 unchanged) from <clean-copy>/tests/fixtures/fixture_repo.']
+demo answer ok, verified badges: 1
+path '/' rejected: ['That path is outside CODERAG_ALLOWED_ROOTS.']
+headless health: ok

@@ -1,0 +1,20 @@
+# headless launch check 2026-10-12T20:11:03+00:00
+command: .venv/bin/streamlit run src/coderag/streamlit_app.py --server.headless true --server.port 8599
+health endpoint: (200, 'ok')
+root page served (status, looks like streamlit): (200, True)
+bound address check: 200
+process exit after terminate: 0
+--- streamlit output (first lines) ---
+2026-10-12 16:11:05.675 Uvicorn server started on 127.0.0.1:8599
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8599
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+note: the "bound address check" via 0.0.0.0 is not meaningful on macOS (connecting to 0.0.0.0 reaches localhost); the evidence of localhost-only binding is Streamlit's own line "Uvicorn server started on 127.0.0.1:8599" above.

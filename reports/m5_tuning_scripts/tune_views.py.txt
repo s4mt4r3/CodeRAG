@@ -1,0 +1,37 @@
+import collections, numpy as np, re
+from coderag import benchmark
+from coderag.embeddings import LocalEmbedder, _normalize
+from coderag.evalgen import generate_questions
+from coderag.hybrid import rrf
+from coderag.lexical import search_lexical
+from coderag.store import Store
+st = Store("data/index/eval_ast.db"); emb = LocalEmbedder()
+test_ids = {q.id for q in generate_questions("data/eval_repo/src", n=200, seed=0)}
+dev = [q for q in generate_questions("data/eval_repo/src", n=400, seed=1) if q.id not in test_ids]
+chunks = st.all_chunks(); rowids = [c.rowid for c in chunks]
+def docview(c):
+    lines = c.code.split("\n")
+    # signature lines up to the first line ending with ':' + the docstring if present
+    out = []; 
+    for i,l in enumerate(lines):
+        out.append(l)
+        if l.rstrip().endswith(":") and not l.lstrip().startswith("@"): break
+    m = re.search(r'("""|\'\'\')(.*?)(\1)', c.code, re.S)
+    if m: out.append(m.group(2).strip())
+    return c.text.split("\n")[0] + "\n" + "\n".join(out)
+M_doc = emb.embed_documents([docview(c) for c in chunks])
+M_full = emb.embed_documents([c.text for c in chunks])
+def mk(M, sym):
+    def vec(q, k):
+        qv = _normalize(np.stack(list(emb._model.passage_embed([q])))[0]) if sym else emb.embed_query(q)
+        s = M @ qv; idx = np.argsort(-s)[:k]; return [rowids[i] for i in idx]
+    return vec
+def run(name, rank_fn):
+    r = benchmark.run(dev, lambda q,k: benchmark.as_retrieved(st.hits_for([(rid,1.0) for rid in rank_fn(q,k)])))
+    print(name, {t: round(d["recall_at_5"],4) for t,d in r["by_type"].items()})
+for Mname, M in (("full", M_full), ("doc", M_doc)):
+    for sym in (False, True):
+        v = mk(M, sym)
+        run(f"vector {Mname} sym={sym}", v)
+        for wv in (0.5, 1.0):
+            run(f"  hybrid {Mname} sym={sym} wv={wv}", lambda q,k,v=v,wv=wv: [x for x,_ in rrf([[h.rowid for h in search_lexical(st,q,50)], v(q,50)], [1.0,wv])][:k])

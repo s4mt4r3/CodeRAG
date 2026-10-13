@@ -1,0 +1,286 @@
+{
+  "files": {
+    "scripts/frozen.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "e95bf64e84a5187a07b14fe1c34493240eac444e5b8ef52c25a8e26f779667c0"
+    },
+    "tests/FROZEN_MARKER": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "81ae014b6bdbd3dc7cff5e3beb64720feeb7b0cb988cf7bd16fcabc691002efc"
+    },
+    "tests/conftest.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "a5df0341e4c78082f7d62be6d98a98584ea6a3c16396b6f76f1501b7da072981"
+    },
+    "tests/fixtures/expected.json": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "3de8b703496dcd6d110cc156c90e0a21af5e02adc39ccce6b413b997cbe30d4c"
+    },
+    "tests/fixtures/fixture_repo/service/__init__.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "89916ce5fe78dd679e7e8e157d94d192fb881c344af4371336fb7a18e13d1b3f"
+    },
+    "tests/fixtures/fixture_repo/service/api_handlers.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "9bd322e73f012c6a76c65a69e385f1984d72b17ae8205d59d66b3b308cb15131"
+    },
+    "tests/fixtures/fixture_repo/service/notifications.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "155bda794c1135b1d7dfb3eaa06f1f7b2c962667430e3293d7d87bf025168150"
+    },
+    "tests/fixtures/fixture_repo/service/orders.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "b0370581646156426ab92b4068ebe3157fe0cb64b856f225eacdf30220a135e0"
+    },
+    "tests/fixtures/fixture_repo/service/workers.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "2e71b1a050f3bf7c4f9af56e500f3ed3a3069ab0699d8fa2f623bc599ed68b78"
+    },
+    "tests/fixtures/fixture_repo/shopcore/__init__.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "c11aa23574204eab794daaa33c47caceb1788b6cc0750519f1db748d4695bdf8"
+    },
+    "tests/fixtures/fixture_repo/shopcore/models.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "001c6bf6862777bdf797816b6d89826c1c6ace9ac78e96534344196c6a2f4ed9"
+    },
+    "tests/fixtures/fixture_repo/shopcore/pricing.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "0e6720336f3c070645c4cc2a5adcdfb40434f1cd2ed0ffc9efdcdc927ee262a2"
+    },
+    "tests/fixtures/fixture_repo/shopcore/utils.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "7f1d37876baeff8f7a754ab54424b308a0536b2c0b04092565ba2bb3ba93526f"
+    },
+    "tests/fixtures/fixture_repo/storage/__init__.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "9894cdafcdfd2e47ed33cf5fa6d3137a703d17b7ab239b968090e15ee2b209b6"
+    },
+    "tests/fixtures/fixture_repo/storage/cache.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "bc08a6a106afd40d515c3b40b11afabfc76a8acedc3c54eb1ce2afa1fb978917"
+    },
+    "tests/fixtures/fixture_repo/storage/repository.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "d6f62580baa1ed5be583aa0a8cdbb82522c07c8c7237e4d4052d78eec788ccdf"
+    },
+    "tests/fixtures/fixture_repo/storage/serializers.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "ea7e3f741c3dc816c8439190baac32b9576e9e943f2e9c28679914a96baf8e9a"
+    },
+    "tests/helpers/__init__.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/helpers/oracle.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "4d1b8232103ade140d3b4581ceb0fba6dfad7999a97a203cebb21670a033d9ab"
+    },
+    "tests/test_app_cli.py": {
+      "frozen_at": "2026-10-12T20:19:13+00:00",
+      "sha256": "8eb350b90a27b87a8ef827974b8e8000811ee53388fdc7e7e12ad96489a54098"
+    },
+    "tests/test_app_logic.py": {
+      "frozen_at": "2026-10-12T20:19:13+00:00",
+      "sha256": "440dfae7e258c91f250cfe0d00911c2e7e0d602c9f9cf27851d9b8f0616d86a9"
+    },
+    "tests/test_byo_api.py": {
+      "frozen_at": "2026-10-12T19:17:04+00:00",
+      "sha256": "862e559902a0c45615e913ef9f1b1459e56597080994564a72c76f6a93cc40a4"
+    },
+    "tests/test_byo_cli_eval.py": {
+      "frozen_at": "2026-10-12T19:17:04+00:00",
+      "sha256": "25df50086b2ac75607cfab1a82aea23fde62fcf1ec3ba25ef1f98945d5241a57"
+    },
+    "tests/test_byo_live.py": {
+      "frozen_at": "2026-10-12T19:17:04+00:00",
+      "sha256": "f53ec5dbb2c22808e08020d321f62c827ff3a5278ffd1d940710bfbfe4548007"
+    },
+    "tests/test_byo_netguard.py": {
+      "frozen_at": "2026-10-12T19:17:04+00:00",
+      "sha256": "1ab57533b693e5e3684792255e0311909024dfda61f905930117f7cbaa58971c"
+    },
+    "tests/test_byo_providers.py": {
+      "frozen_at": "2026-10-12T19:17:04+00:00",
+      "sha256": "4216451d43ba3aa906da8525996df3d3e038fba8d28625fbef6163a5c9d8712f"
+    },
+    "tests/test_hosted_deploy.py": {
+      "frozen_at": "2026-10-12T22:51:30+00:00",
+      "sha256": "93d5e44c2778e689d2f0daf47412eb10f85e2e2c275e49849a70eaccec30f437"
+    },
+    "tests/test_m0_embedding_offline.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "6306f32deb3810d872ab9a976a800725de4538d4d03bcf6f24b4057758aabb92"
+    },
+    "tests/test_m0_frozen.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "bf01083d70909dfc035d5f54fd792feb7b665c43e66fffc705fa0387a34a299f"
+    },
+    "tests/test_m0_markers.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "2ea1a71d4c61851d8a55a09562e9b86d8f6c36d286207e6134e7c533408fbaab"
+    },
+    "tests/test_m0_oracle.py": {
+      "frozen_at": "2026-10-12T07:44:22+00:00",
+      "sha256": "7f771053e68f5416557aced49cb6c3223e4829e83837f24960fea3ab50b3689b"
+    },
+    "tests/test_m10_audit.py": {
+      "frozen_at": "2026-10-12T18:33:54+00:00",
+      "sha256": "1d9cc840b0e6296f111c8b5a2a4af48f5320636094a70e34d00a065728eb997f"
+    },
+    "tests/test_m1_eval_symbols.py": {
+      "frozen_at": "2026-10-12T07:47:23+00:00",
+      "sha256": "44cbee1dc4683842e089d7f25c266538337f530ab16a8c3a9370f9aa308b770e"
+    },
+    "tests/test_m1_ingest.py": {
+      "frozen_at": "2026-10-12T07:47:23+00:00",
+      "sha256": "c6b9503e094bfecf60c5a3045da51502d525a2f1d751fa1eecfdb4ec10f5d8d7"
+    },
+    "tests/test_m1_symbols.py": {
+      "frozen_at": "2026-10-12T07:47:23+00:00",
+      "sha256": "c75a84f3f6cb61da7e16273d993f3f23d1b2cea23f4098eb86d4d476221321d9"
+    },
+    "tests/test_m2_chunking.py": {
+      "frozen_at": "2026-10-12T07:52:01+00:00",
+      "sha256": "64ecb2b8b23d6b303d2ae5305c6e9d444ed95114d7c9d5e69f5ecb47e46ac62e"
+    },
+    "tests/test_m2_eval_chunking.py": {
+      "frozen_at": "2026-10-12T07:52:01+00:00",
+      "sha256": "84d6d0e7a1ec98c3bdd2aa3cbb61377a84395a37531eba87f081e9812081d249"
+    },
+    "tests/test_m3_lexical.py": {
+      "frozen_at": "2026-10-12T17:50:28+00:00",
+      "sha256": "c5dd2b515b5f3f1997e92a1946783e492ca66871c4662d28e710d415c32af997"
+    },
+    "tests/test_m3_store.py": {
+      "frozen_at": "2026-10-12T17:50:28+00:00",
+      "sha256": "533f48412af36725cf84d2759d0cba68e12b7f3ec5b4b24279dd122564eb68c2"
+    },
+    "tests/test_m4_bm25_floors.py": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "sha256": "0499c9d6b35437565e9b9eea67bb884a3ecd4bde0a572e5079640713be125acd"
+    },
+    "tests/test_m4_eval_bm25.py": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "sha256": "fa69e97dd5827fa5d30ae03339a368281372553af9d27907473de1212e56f56d"
+    },
+    "tests/test_m4_evalgen.py": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "sha256": "3357c557eb415f7370a79723199ed39aea7270d5b24fc469f9897e281abcf2e8"
+    },
+    "tests/test_m4_metrics.py": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "sha256": "f37cc6365f756a9f14b001fc2e35498dca08edae8b29c7dd9f7cc6f451b44346"
+    },
+    "tests/test_m5_claims.py": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "sha256": "4abe2cfd71216080ce544ff9d2c68f4fcbb9ee9209b233c09793cb50eb654585"
+    },
+    "tests/test_m5_eval_hybrid.py": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "sha256": "f3126a9fdfdc7116549a16499afb3a6d4c75330b945ee9fabea2816ff659a2c7"
+    },
+    "tests/test_m5_hybrid.py": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "sha256": "63d66eb76f47bff43e857ce97ee6518bb208d7f6f7bf9a5e85c61cde8100ce8d"
+    },
+    "tests/test_m6_callgraph.py": {
+      "frozen_at": "2026-10-12T18:17:00+00:00",
+      "sha256": "af357562520c88b3f689a8c2c5aa25e75985b4010f8ea864e8cb5aea9f6741b4"
+    },
+    "tests/test_m6_eval_callgraph.py": {
+      "frozen_at": "2026-10-12T18:17:00+00:00",
+      "sha256": "bd8aee2f23769aad18a9a0c09a2128d4669fab27491445793e5b0c6bbce1d27e"
+    },
+    "tests/test_m7_agent.py": {
+      "frozen_at": "2026-10-12T18:20:47+00:00",
+      "sha256": "4c9bbe675d8de5b06658535d3463ba5aa1b04add3a4c4e9f6b0e10910edd8b94"
+    },
+    "tests/test_m7_live.py": {
+      "frozen_at": "2026-10-12T18:20:47+00:00",
+      "sha256": "951e9daa20e045b8d83aa23359fe97796445d686c57d9f1ee7ea564439b1913b"
+    },
+    "tests/test_m7_tools.py": {
+      "frozen_at": "2026-10-12T18:20:47+00:00",
+      "sha256": "9b9db8581ab0b6419b1457578e2655fb2e802582ab0be00455c1748b10d41da4"
+    },
+    "tests/test_m8_citations.py": {
+      "frozen_at": "2026-10-12T18:22:57+00:00",
+      "sha256": "0683ebcba2ef2edf3cab7a6190f9d96f15ebc75ed20419aaa46b9554bc9cc849"
+    },
+    "tests/test_m9_claims.py": {
+      "frozen_at": "2026-10-12T18:29:28+00:00",
+      "sha256": "60605aaa3d289f7e942847d9166e4e0e67bb7a041b185ace04bd8e7c2b2b4b86"
+    },
+    "tests/test_m9_cli_api.py": {
+      "frozen_at": "2026-10-12T18:29:28+00:00",
+      "sha256": "5b6c277449df4e98e0544702521279077ecabf301e24eaea4a2d81e5b38450c8"
+    },
+    "tests/test_m9_report.py": {
+      "frozen_at": "2026-10-12T18:29:28+00:00",
+      "sha256": "ba5042bfd8771d5dfa555f352278a9694d8a87ffdabacdfa76347fb9be0d1f50"
+    },
+    "tests/test_streamlit_app.py": {
+      "frozen_at": "2026-10-12T20:19:13+00:00",
+      "sha256": "98cc3e21637ed9d5aa3edd4d380e8ba565fbf1fdc504962b03bf3119ba6df7ee"
+    }
+  },
+  "floors": {
+    "bm25_callers_recall_at_5": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "value": 0.7
+    },
+    "bm25_definition_recall_at_5": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "value": 0.88
+    },
+    "bm25_docstring_masked_recall_at_5": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "value": 0.9
+    },
+    "callgraph_fixture_precision": {
+      "frozen_at": "2026-10-12T18:17:00+00:00",
+      "value": 0.95
+    },
+    "callgraph_fixture_recall": {
+      "frozen_at": "2026-10-12T18:17:00+00:00",
+      "value": 0.95
+    },
+    "fixture_bm25_callers_recall_at_5": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "value": 0.97
+    },
+    "fixture_bm25_definition_recall_at_5": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "value": 0.95
+    },
+    "fixture_bm25_docstring_masked_recall_at_5": {
+      "frozen_at": "2026-10-12T17:53:23+00:00",
+      "value": 0.97
+    },
+    "fixture_hybrid_callers_recall_at_5": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "value": 0.97
+    },
+    "fixture_hybrid_definition_recall_at_5": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "value": 0.97
+    },
+    "fixture_hybrid_docstring_masked_recall_at_5": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "value": 0.97
+    },
+    "hybrid_callers_recall_at_5": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "value": 0.53
+    },
+    "hybrid_definition_recall_at_5": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "value": 0.89
+    },
+    "hybrid_docstring_masked_recall_at_5": {
+      "frozen_at": "2026-10-12T18:13:43+00:00",
+      "value": 0.87
+    }
+  }
+}

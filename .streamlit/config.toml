@@ -1,0 +1,10 @@
+# Streamlit settings for coderag (no secrets here).
+[server]
+address = "127.0.0.1"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = "none"
+toolbarMode = "minimal"

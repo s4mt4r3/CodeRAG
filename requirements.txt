@@ -1,0 +1,3 @@
+# Used by Streamlit Community Cloud: installs this package plus the web-app extra.
+# The embedding model (.[embed]) is deliberately left out; the app uses BM25 there.
+.[app]

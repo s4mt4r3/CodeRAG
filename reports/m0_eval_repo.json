@@ -1,0 +1,9 @@
+{
+  "repo": "pallets/click",
+  "tag": "8.5.0",
+  "sha": "8b19813f2bfca99f1018a587a8cf54fc959f2e5d",
+  "indexed_root": "data/eval_repo/src",
+  "python_files": 17,
+  "functions_and_methods": 579,
+  "with_docstrings": 214
+}

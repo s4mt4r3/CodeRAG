@@ -1,0 +1,16 @@
+import sys
+from coderag import benchmark
+from coderag.embeddings import LocalEmbedder
+from coderag.evalgen import generate_questions
+from coderag.hybrid import HybridSearcher
+from coderag.store import Store
+st = Store("data/index/eval_ast.db"); emb = LocalEmbedder()
+test_ids = {q.id for q in generate_questions("data/eval_repo/src", n=200, seed=0)}
+dev = [q for q in generate_questions("data/eval_repo/src", n=400, seed=1) if q.id not in test_ids]
+import collections; print("dev", collections.Counter(q.type for q in dev))
+bm = benchmark.run(dev, benchmark.bm25_search(st))
+print("bm25", {t: round(d["recall_at_5"],4) for t,d in bm["by_type"].items()})
+for wv in (0.2, 0.35, 0.5, 0.75, 1.0):
+    hs = HybridSearcher(st, emb, w_vec=wv)
+    r = benchmark.run(dev, lambda q,k: benchmark.as_retrieved(hs.search(q,k)))
+    print("w_vec", wv, {t: round(d["recall_at_5"],4) for t,d in r["by_type"].items()})

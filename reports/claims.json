@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-10-12T18:29:16+00:00",
+  "pytest_exit_code": 1,
+  "claims": [
+    {
+      "id": "tests.test_m5_claims::test_hybrid_beats_bm25_on_docstring_masked",
+      "outcome": "failed",
+      "message": "AssertionError: hybrid 0.9000 vs bm25 0.9375\nassert 0.9 >= (0.9375 + 0.02)"
+    },
+    {
+      "id": "tests.test_m9_claims::test_ast_chunking_beats_fixed_bm25_recall_at_5",
+      "outcome": "passed"
+    }
+  ],
+  "details": {
+    "hybrid_beats_bm25_docstring_masked": {
+      "required_margin": 0.02,
+      "bm25_recall_at_5": 0.9375,
+      "hybrid_recall_at_5": 0.9,
+      "n": 80,
+      "passed": false
+    },
+    "ast_beats_fixed_bm25_overall": {
+      "required_margin": 0.02,
+      "ast_recall_at_5": 0.8871666666666667,
+      "fixed_recall_at_5": 0.8231666666666666,
+      "n": 200,
+      "passed": true,
+      "post_hoc": true
+    }
+  }
+}

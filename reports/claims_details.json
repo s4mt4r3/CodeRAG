@@ -1,0 +1,17 @@
+{
+  "hybrid_beats_bm25_docstring_masked": {
+    "required_margin": 0.02,
+    "bm25_recall_at_5": 0.9375,
+    "hybrid_recall_at_5": 0.9,
+    "n": 80,
+    "passed": false
+  },
+  "ast_beats_fixed_bm25_overall": {
+    "required_margin": 0.02,
+    "ast_recall_at_5": 0.8871666666666667,
+    "fixed_recall_at_5": 0.8231666666666666,
+    "n": 200,
+    "passed": true,
+    "post_hoc": true
+  }
+}

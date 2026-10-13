@@ -1,0 +1,588 @@
+{
+  "generated_at": "2026-10-12T18:28:38+00:00",
+  "eval_repo": {
+    "name": "pallets/click",
+    "sha": "8b19813f2bfca99f1018a587a8cf54fc959f2e5d",
+    "seed": 0,
+    "n_questions": 200
+  },
+  "retrieval": {
+    "bm25": {
+      "overall": {
+        "n": 200,
+        "recall_at_1": 0.6485,
+        "recall_at_5": 0.8871666666666667,
+        "recall_at_10": 0.907,
+        "mrr": 0.7598055555555555
+      },
+      "by_type": {
+        "callers": {
+          "n": 40,
+          "recall_at_1": 0.1675,
+          "recall_at_5": 0.7358333333333333,
+          "recall_at_10": 0.7849999999999999,
+          "mrr": 0.46624999999999994
+        },
+        "definition": {
+          "n": 80,
+          "recall_at_1": 0.7,
+          "recall_at_5": 0.9125,
+          "recall_at_10": 0.925,
+          "mrr": 0.7854166666666667
+        },
+        "docstring_masked": {
+          "n": 80,
+          "recall_at_1": 0.8375,
+          "recall_at_5": 0.9375,
+          "recall_at_10": 0.95,
+          "mrr": 0.8809722222222222
+        }
+      }
+    },
+    "vector": {
+      "overall": {
+        "n": 200,
+        "recall_at_1": 0.527,
+        "recall_at_5": 0.7711666666666666,
+        "recall_at_10": 0.8343333333333334,
+        "mrr": 0.6532976190476191
+      },
+      "by_type": {
+        "callers": {
+          "n": 40,
+          "recall_at_1": 0.034999999999999996,
+          "recall_at_5": 0.43083333333333335,
+          "recall_at_10": 0.5466666666666666,
+          "mrr": 0.2947916666666667
+        },
+        "definition": {
+          "n": 80,
+          "recall_at_1": 0.7625,
+          "recall_at_5": 0.9375,
+          "recall_at_10": 0.975,
+          "mrr": 0.8470982142857142
+        },
+        "docstring_masked": {
+          "n": 80,
+          "recall_at_1": 0.5375,
+          "recall_at_5": 0.775,
+          "recall_at_10": 0.8375,
+          "mrr": 0.63875
+        }
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "n": 200,
+        "recall_at_1": 0.6385000000000001,
+        "recall_at_5": 0.8431666666666666,
+        "recall_at_10": 0.8778333333333334,
+        "mrr": 0.747
+      },
+      "by_type": {
+        "callers": {
+          "n": 40,
+          "recall_at_1": 0.14250000000000002,
+          "recall_at_5": 0.5658333333333333,
+          "recall_at_10": 0.6391666666666667,
+          "mrr": 0.4029166666666667
+        },
+        "definition": {
+          "n": 80,
+          "recall_at_1": 0.7375,
+          "recall_at_5": 0.925,
+          "recall_at_10": 0.9625,
+          "mrr": 0.8275
+        },
+        "docstring_masked": {
+          "n": 80,
+          "recall_at_1": 0.7875,
+          "recall_at_5": 0.9,
+          "recall_at_10": 0.9125,
+          "mrr": 0.8385416666666666
+        }
+      }
+    },
+    "config": {
+      "embedder": "fastembed:BAAI/bge-small-en-v1.5",
+      "rrf_k": 60,
+      "w_lex": 1.0,
+      "w_vec": 0.5,
+      "depth": 50
+    }
+  },
+  "agent": {
+    "mode": "scripted",
+    "label": "Pipeline check with a scripted LLM (search -> read top hit -> cite it). Measures tool dispatch, citation verification and grounding plumbing, NOT model answer quality. Token counts are synthetic scripted values.",
+    "model": "scripted",
+    "n_questions": 30,
+    "citation_accuracy": 1.0,
+    "answer_grounded_rate": 0.7,
+    "unsupported_rate": 0.0,
+    "failure_rate": 0.0,
+    "latency_ms": {
+      "p50": 20.992624515201896,
+      "p95": 44.96116480731871
+    },
+    "tokens": {
+      "input": 900,
+      "output": 450,
+      "mean_per_question": 45.0
+    },
+    "estimated_cost_usd": null,
+    "price_per_mtok": {
+      "input": null,
+      "output": null
+    },
+    "per_question": [
+      {
+        "id": "definition:click.termui.secho",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.utils._LazyFile.open",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.types.CompositeParamType",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "callers:click.core.Context._make_sub_context",
+        "type": "callers",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.core.Context.abort",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core.Command.format_arguments",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click._termui_impl._less_uses_raw_mode",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.testing._FDCapture.start",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.core._check_nested_chain",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click._compat.is_ascii_encoding",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.parser._OptionParser._match_long_opt",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core.Group.format_commands",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click._termui_impl._translate_ch_to_exc",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core.Command.collect_usage_pieces",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "callers:click.testing.EchoingStdin._echo",
+        "type": "callers",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.core.Option._resolve_lazy_default",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.types.Choice.get_invalid_choice_message",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "callers:click.globals.push_context",
+        "type": "callers",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core._format_deprecated_suffix",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.core.Context._default_map_has",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core.Command.shell_complete",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core.Option.prompt_for_value",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "callers:click.types.ParamType.split_envvar_value",
+        "type": "callers",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.core.iter_params_for_processing.sort_key",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "callers:click.parser._OptionParser._get_value_from_state",
+        "type": "callers",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "callers:click.core.augment_usage_errors",
+        "type": "callers",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": false,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "definition:click.exceptions.BadArgumentUsage",
+        "type": "definition",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click._compat._is_compatible_text_stream",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.core.Context.get_usage",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      },
+      {
+        "id": "docstring_masked:click.shell_completion.shell_complete",
+        "type": "docstring_masked",
+        "ok": true,
+        "failure": null,
+        "unsupported": false,
+        "grounded": true,
+        "citations": 1,
+        "verified": 1
+      }
+    ]
+  },
+  "ablation_chunking": {
+    "retrievers": [
+      "bm25",
+      "hybrid"
+    ],
+    "fixed_config": {
+      "size": 40,
+      "overlap": 10
+    },
+    "results": {
+      "ast": {
+        "chunks": 694,
+        "bm25": {
+          "overall": {
+            "n": 200,
+            "recall_at_1": 0.6485,
+            "recall_at_5": 0.8871666666666667,
+            "recall_at_10": 0.907,
+            "mrr": 0.7598055555555555
+          },
+          "by_type": {
+            "callers": {
+              "n": 40,
+              "recall_at_1": 0.1675,
+              "recall_at_5": 0.7358333333333333,
+              "recall_at_10": 0.7849999999999999,
+              "mrr": 0.46624999999999994
+            },
+            "definition": {
+              "n": 80,
+              "recall_at_1": 0.7,
+              "recall_at_5": 0.9125,
+              "recall_at_10": 0.925,
+              "mrr": 0.7854166666666667
+            },
+            "docstring_masked": {
+              "n": 80,
+              "recall_at_1": 0.8375,
+              "recall_at_5": 0.9375,
+              "recall_at_10": 0.95,
+              "mrr": 0.8809722222222222
+            }
+          }
+        },
+        "mean_lines_per_top5_chunk": 22.492,
+        "hybrid": {
+          "overall": {
+            "n": 200,
+            "recall_at_1": 0.6385000000000001,
+            "recall_at_5": 0.8431666666666666,
+            "recall_at_10": 0.8778333333333334,
+            "mrr": 0.747
+          },
+          "by_type": {
+            "callers": {
+              "n": 40,
+              "recall_at_1": 0.14250000000000002,
+              "recall_at_5": 0.5658333333333333,
+              "recall_at_10": 0.6391666666666667,
+              "mrr": 0.4029166666666667
+            },
+            "definition": {
+              "n": 80,
+              "recall_at_1": 0.7375,
+              "recall_at_5": 0.925,
+              "recall_at_10": 0.9625,
+              "mrr": 0.8275
+            },
+            "docstring_masked": {
+              "n": 80,
+              "recall_at_1": 0.7875,
+              "recall_at_5": 0.9,
+              "recall_at_10": 0.9125,
+              "mrr": 0.8385416666666666
+            }
+          }
+        }
+      },
+      "fixed": {
+        "chunks": 426,
+        "bm25": {
+          "overall": {
+            "n": 200,
+            "recall_at_1": 0.49700000000000005,
+            "recall_at_5": 0.8231666666666666,
+            "recall_at_10": 0.8536666666666666,
+            "mrr": 0.6463035714285713
+          },
+          "by_type": {
+            "callers": {
+              "n": 40,
+              "recall_at_1": 0.36,
+              "recall_at_5": 0.6908333333333333,
+              "recall_at_10": 0.7183333333333334,
+              "mrr": 0.58375
+            },
+            "definition": {
+              "n": 80,
+              "recall_at_1": 0.35,
+              "recall_at_5": 0.85,
+              "recall_at_10": 0.8875,
+              "mrr": 0.5474255952380952
+            },
+            "docstring_masked": {
+              "n": 80,
+              "recall_at_1": 0.7125,
+              "recall_at_5": 0.8625,
+              "recall_at_10": 0.8875,
+              "mrr": 0.7764583333333334
+            }
+          }
+        },
+        "mean_lines_per_top5_chunk": 39.361,
+        "hybrid": {
+          "overall": {
+            "n": 200,
+            "recall_at_1": 0.47700000000000004,
+            "recall_at_5": 0.7823333333333333,
+            "recall_at_10": 0.8390000000000001,
+            "mrr": 0.6231170634920634
+          },
+          "by_type": {
+            "callers": {
+              "n": 40,
+              "recall_at_1": 0.31,
+              "recall_at_5": 0.6116666666666666,
+              "recall_at_10": 0.67,
+              "mrr": 0.545625
+            },
+            "definition": {
+              "n": 80,
+              "recall_at_1": 0.4375,
+              "recall_at_5": 0.8375,
+              "recall_at_10": 0.9125,
+              "mrr": 0.6034027777777777
+            },
+            "docstring_masked": {
+              "n": 80,
+              "recall_at_1": 0.6,
+              "recall_at_5": 0.8125,
+              "recall_at_10": 0.85,
+              "mrr": 0.681577380952381
+            }
+          }
+        }
+      }
+    }
+  }
+}

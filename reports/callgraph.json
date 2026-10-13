@@ -1,0 +1,15 @@
+{
+  "repo": "pallets/click (src)",
+  "resolved_edges_system": 402,
+  "resolved_edges_oracle": 402,
+  "true_positives": 402,
+  "precision": 1.0,
+  "recall": 1.0,
+  "edge_rows_by_confidence": {
+    "unresolved": 1202,
+    "resolved": 487,
+    "ambiguous": 1599
+  },
+  "false_positives_sample": [],
+  "false_negatives_sample": []
+}

@@ -1,0 +1,74 @@
+{
+  "system": "bm25",
+  "eval_repo": {
+    "name": "pallets/click",
+    "sha": "8b19813f2bfca99f1018a587a8cf54fc959f2e5d",
+    "indexed_root": "src"
+  },
+  "seed": 0,
+  "n_questions": 200,
+  "real_repo": {
+    "overall": {
+      "n": 200,
+      "recall_at_1": 0.6485,
+      "recall_at_5": 0.8871666666666667,
+      "recall_at_10": 0.907,
+      "mrr": 0.7598055555555555
+    },
+    "by_type": {
+      "callers": {
+        "n": 40,
+        "recall_at_1": 0.1675,
+        "recall_at_5": 0.7358333333333333,
+        "recall_at_10": 0.7849999999999999,
+        "mrr": 0.46624999999999994
+      },
+      "definition": {
+        "n": 80,
+        "recall_at_1": 0.7,
+        "recall_at_5": 0.9125,
+        "recall_at_10": 0.925,
+        "mrr": 0.7854166666666667
+      },
+      "docstring_masked": {
+        "n": 80,
+        "recall_at_1": 0.8375,
+        "recall_at_5": 0.9375,
+        "recall_at_10": 0.95,
+        "mrr": 0.8809722222222222
+      }
+    }
+  },
+  "fixture": {
+    "overall": {
+      "n": 124,
+      "recall_at_1": 0.7338709677419355,
+      "recall_at_5": 0.9919354838709677,
+      "recall_at_10": 1.0,
+      "mrr": 0.8637096774193548
+    },
+    "by_type": {
+      "callers": {
+        "n": 31,
+        "recall_at_1": 0.1935483870967742,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 0.6021505376344086
+      },
+      "definition": {
+        "n": 55,
+        "recall_at_1": 0.8727272727272727,
+        "recall_at_5": 0.9818181818181818,
+        "recall_at_10": 1.0,
+        "mrr": 0.926060606060606
+      },
+      "docstring_masked": {
+        "n": 38,
+        "recall_at_1": 0.9736842105263158,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 0.9868421052631579
+      }
+    }
+  }
+}

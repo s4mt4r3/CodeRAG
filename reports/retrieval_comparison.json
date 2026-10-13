@@ -1,0 +1,213 @@
+{
+  "real_repo": {
+    "bm25": {
+      "overall": {
+        "n": 200,
+        "recall_at_1": 0.6485,
+        "recall_at_5": 0.8871666666666667,
+        "recall_at_10": 0.907,
+        "mrr": 0.7598055555555555
+      },
+      "by_type": {
+        "callers": {
+          "n": 40,
+          "recall_at_1": 0.1675,
+          "recall_at_5": 0.7358333333333333,
+          "recall_at_10": 0.7849999999999999,
+          "mrr": 0.46624999999999994
+        },
+        "definition": {
+          "n": 80,
+          "recall_at_1": 0.7,
+          "recall_at_5": 0.9125,
+          "recall_at_10": 0.925,
+          "mrr": 0.7854166666666667
+        },
+        "docstring_masked": {
+          "n": 80,
+          "recall_at_1": 0.8375,
+          "recall_at_5": 0.9375,
+          "recall_at_10": 0.95,
+          "mrr": 0.8809722222222222
+        }
+      }
+    },
+    "vector": {
+      "overall": {
+        "n": 200,
+        "recall_at_1": 0.527,
+        "recall_at_5": 0.7711666666666666,
+        "recall_at_10": 0.8343333333333334,
+        "mrr": 0.6532976190476191
+      },
+      "by_type": {
+        "callers": {
+          "n": 40,
+          "recall_at_1": 0.034999999999999996,
+          "recall_at_5": 0.43083333333333335,
+          "recall_at_10": 0.5466666666666666,
+          "mrr": 0.2947916666666667
+        },
+        "definition": {
+          "n": 80,
+          "recall_at_1": 0.7625,
+          "recall_at_5": 0.9375,
+          "recall_at_10": 0.975,
+          "mrr": 0.8470982142857142
+        },
+        "docstring_masked": {
+          "n": 80,
+          "recall_at_1": 0.5375,
+          "recall_at_5": 0.775,
+          "recall_at_10": 0.8375,
+          "mrr": 0.63875
+        }
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "n": 200,
+        "recall_at_1": 0.6385000000000001,
+        "recall_at_5": 0.8431666666666666,
+        "recall_at_10": 0.8778333333333334,
+        "mrr": 0.747
+      },
+      "by_type": {
+        "callers": {
+          "n": 40,
+          "recall_at_1": 0.14250000000000002,
+          "recall_at_5": 0.5658333333333333,
+          "recall_at_10": 0.6391666666666667,
+          "mrr": 0.4029166666666667
+        },
+        "definition": {
+          "n": 80,
+          "recall_at_1": 0.7375,
+          "recall_at_5": 0.925,
+          "recall_at_10": 0.9625,
+          "mrr": 0.8275
+        },
+        "docstring_masked": {
+          "n": 80,
+          "recall_at_1": 0.7875,
+          "recall_at_5": 0.9,
+          "recall_at_10": 0.9125,
+          "mrr": 0.8385416666666666
+        }
+      }
+    },
+    "config": {
+      "embedder": "fastembed:BAAI/bge-small-en-v1.5",
+      "rrf_k": 60,
+      "w_lex": 1.0,
+      "w_vec": 0.5,
+      "depth": 50
+    }
+  },
+  "fixture": {
+    "bm25": {
+      "overall": {
+        "n": 124,
+        "recall_at_1": 0.7338709677419355,
+        "recall_at_5": 0.9919354838709677,
+        "recall_at_10": 1.0,
+        "mrr": 0.8637096774193548
+      },
+      "by_type": {
+        "callers": {
+          "n": 31,
+          "recall_at_1": 0.1935483870967742,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.6021505376344086
+        },
+        "definition": {
+          "n": 55,
+          "recall_at_1": 0.8727272727272727,
+          "recall_at_5": 0.9818181818181818,
+          "recall_at_10": 1.0,
+          "mrr": 0.926060606060606
+        },
+        "docstring_masked": {
+          "n": 38,
+          "recall_at_1": 0.9736842105263158,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.9868421052631579
+        }
+      }
+    },
+    "vector": {
+      "overall": {
+        "n": 124,
+        "recall_at_1": 0.7258064516129032,
+        "recall_at_5": 0.9616935483870968,
+        "recall_at_10": 0.9798387096774194,
+        "mrr": 0.8473790322580645
+      },
+      "by_type": {
+        "callers": {
+          "n": 31,
+          "recall_at_1": 0.0967741935483871,
+          "recall_at_5": 0.8467741935483871,
+          "recall_at_10": 0.9193548387096774,
+          "mrr": 0.4916666666666667
+        },
+        "definition": {
+          "n": 55,
+          "recall_at_1": 0.9636363636363636,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.9818181818181818
+        },
+        "docstring_masked": {
+          "n": 38,
+          "recall_at_1": 0.8947368421052632,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.9429824561403509
+        }
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "n": 124,
+        "recall_at_1": 0.7419354838709677,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 0.8678763440860214
+      },
+      "by_type": {
+        "callers": {
+          "n": 31,
+          "recall_at_1": 0.1935483870967742,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.5940860215053764
+        },
+        "definition": {
+          "n": 55,
+          "recall_at_1": 0.8727272727272727,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.9309090909090909
+        },
+        "docstring_masked": {
+          "n": 38,
+          "recall_at_1": 1.0,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 1.0
+        }
+      }
+    },
+    "config": {
+      "embedder": "fastembed:BAAI/bge-small-en-v1.5",
+      "rrf_k": 60,
+      "w_lex": 1.0,
+      "w_vec": 0.5,
+      "depth": 50
+    }
+  },
+  "seed": 0
+}

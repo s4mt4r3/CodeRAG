@@ -1,0 +1,7 @@
+# Clean-copy deployment check (no .venv, no data/; installed only from requirements.txt + pytest/ruff), rerun after the project-root fix
+Python 3.12.5
+coderag                   0.1.0
+streamlit                 1.65.0
+fastembed present: False
+..............................................                           [100%]
+406 passed, 26 deselected in 18.80s

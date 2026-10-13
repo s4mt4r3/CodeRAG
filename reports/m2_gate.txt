@@ -1,0 +1,8 @@
+.venv/bin/python -m ruff check .
+All checks passed!
+.venv/bin/python -m pytest -m "not live and not eval and not claim" -q
+...............................................                          [100%]
+47 passed, 6 deselected in 3.01s
+.venv/bin/python -m pytest -m eval -q; rc=$?; if [ $rc -eq 5 ]; then echo "no eval tests collected"; exit 0; fi; exit $rc
+.....                                                                    [100%]
+5 passed, 48 deselected in 2.34s

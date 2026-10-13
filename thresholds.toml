@@ -1,0 +1,24 @@
+# Metric floors. Fraction-valued, named <system>_<metric>[_<scope>].
+# Frozen by `make freeze`: never lower or remove a recorded floor.
+
+[floors]
+
+# M4: BM25 baselines (measured recall@5 minus 0.03, rounded down; source reports/baseline_bm25.json)
+bm25_definition_recall_at_5 = 0.88
+bm25_docstring_masked_recall_at_5 = 0.90
+bm25_callers_recall_at_5 = 0.70
+fixture_bm25_definition_recall_at_5 = 0.95
+fixture_bm25_docstring_masked_recall_at_5 = 0.97
+fixture_bm25_callers_recall_at_5 = 0.97
+
+# M5: hybrid non-regression floors (measured recall@5 minus 0.03, rounded down; source reports/retrieval_comparison.json)
+hybrid_definition_recall_at_5 = 0.89
+hybrid_docstring_masked_recall_at_5 = 0.87
+hybrid_callers_recall_at_5 = 0.53
+fixture_hybrid_definition_recall_at_5 = 0.97
+fixture_hybrid_docstring_masked_recall_at_5 = 0.97
+fixture_hybrid_callers_recall_at_5 = 0.97
+
+# M6: call graph on the fixture vs the ast oracle (values given by the spec)
+callgraph_fixture_precision = 0.95
+callgraph_fixture_recall = 0.95

@@ -1,0 +1,22 @@
+# M5 dev-split tuning (seed=1 questions disjoint from seed=0 test questions)
+## approach 1: RRF weight grid
+dev Counter({'definition': 124, 'docstring_masked': 89, 'callers': 68})
+bm25 {'callers': 0.7762, 'definition': 0.9355, 'docstring_masked': 0.9663}
+w_vec 0.2 {'callers': 0.7007, 'definition': 0.9435, 'docstring_masked': 0.9551}
+w_vec 0.35 {'callers': 0.6529, 'definition': 0.9435, 'docstring_masked': 0.9551}
+w_vec 0.5 {'callers': 0.6186, 'definition': 0.9435, 'docstring_masked': 0.9551}
+w_vec 0.75 {'callers': 0.612, 'definition': 0.9516, 'docstring_masked': 0.9551}
+w_vec 1.0 {'callers': 0.6316, 'definition': 0.9516, 'docstring_masked': 0.9438}
+## approach 2: doc-view embeddings and symmetric query embedding
+vector full sym=False {'callers': 0.4064, 'definition': 0.9435, 'docstring_masked': 0.8315}
+  hybrid full sym=False wv=0.5 {'callers': 0.6186, 'definition': 0.9435, 'docstring_masked': 0.9551}
+  hybrid full sym=False wv=1.0 {'callers': 0.6316, 'definition': 0.9516, 'docstring_masked': 0.9438}
+vector full sym=True {'callers': 0.4064, 'definition': 0.9435, 'docstring_masked': 0.8315}
+  hybrid full sym=True wv=0.5 {'callers': 0.6186, 'definition': 0.9435, 'docstring_masked': 0.9551}
+  hybrid full sym=True wv=1.0 {'callers': 0.6316, 'definition': 0.9516, 'docstring_masked': 0.9438}
+vector doc sym=False {'callers': 0.2211, 'definition': 0.9355, 'docstring_masked': 0.7978}
+  hybrid doc sym=False wv=0.5 {'callers': 0.4931, 'definition': 0.9355, 'docstring_masked': 0.9551}
+  hybrid doc sym=False wv=1.0 {'callers': 0.4699, 'definition': 0.9435, 'docstring_masked': 0.9438}
+vector doc sym=True {'callers': 0.2211, 'definition': 0.9355, 'docstring_masked': 0.7978}
+  hybrid doc sym=True wv=0.5 {'callers': 0.4931, 'definition': 0.9355, 'docstring_masked': 0.9551}
+  hybrid doc sym=True wv=1.0 {'callers': 0.4699, 'definition': 0.9435, 'docstring_masked': 0.9438}

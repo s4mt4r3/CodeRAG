@@ -1,0 +1,836 @@
+{
+ "conventions": {
+  "span": "start_line is the first decorator line when decorated, else the def/class line; end_line is the last line of the body (1-based, inclusive).",
+  "qualified_name": "dotted module path from repo root (package __init__ maps to the package) + enclosing class/function names.",
+  "kind": "class | method (def directly in a class body) | function (everything else, including nested defs).",
+  "calls": "sorted unique final identifiers of every call whose callee is a Name or an attribute chain, inside the function body, excluding nested def/class nodes (including their decorators).",
+  "resolved_edges": "caller -> callee for calls resolvable by scope rules only: enclosing nested defs, same-module top-level defs, imports (incl. aliases and relative), self/cls methods of the enclosing class, and module attribute access via imported modules."
+ },
+ "symbols": [
+  {
+   "qualified_name": "shopcore.models.Customer",
+   "kind": "class",
+   "path": "shopcore/models.py",
+   "start_line": 10,
+   "end_line": 31
+  },
+  {
+   "qualified_name": "shopcore.models.Customer.display_name",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 19,
+   "end_line": 21,
+   "calls": []
+  },
+  {
+   "qualified_name": "shopcore.models.Customer.handle",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 23,
+   "end_line": 24,
+   "calls": [
+    "slugify"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.Customer.add_points",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 26,
+   "end_line": 31,
+   "calls": [
+    "ValueError"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.LineItem",
+   "kind": "class",
+   "path": "shopcore/models.py",
+   "start_line": 34,
+   "end_line": 47
+  },
+  {
+   "qualified_name": "shopcore.models.LineItem.__post_init__",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 42,
+   "end_line": 43,
+   "calls": [
+    "normalize_sku"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.LineItem.subtotal",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 45,
+   "end_line": 47,
+   "calls": [
+    "round"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.Order",
+   "kind": "class",
+   "path": "shopcore/models.py",
+   "start_line": 50,
+   "end_line": 79
+  },
+  {
+   "qualified_name": "shopcore.models.Order.add_item",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 59,
+   "end_line": 63,
+   "calls": [
+    "LineItem",
+    "append"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.Order.item_count",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 65,
+   "end_line": 67,
+   "calls": [
+    "sum"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.Order.gross_total",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 69,
+   "end_line": 71,
+   "calls": [
+    "round",
+    "subtotal",
+    "sum"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.models.Order.is_empty",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 73,
+   "end_line": 75,
+   "calls": []
+  },
+  {
+   "qualified_name": "shopcore.models.Order.mark_paid",
+   "kind": "method",
+   "path": "shopcore/models.py",
+   "start_line": 77,
+   "end_line": 79,
+   "calls": []
+  },
+  {
+   "qualified_name": "shopcore.utils.slugify",
+   "kind": "function",
+   "path": "shopcore/utils.py",
+   "start_line": 9,
+   "end_line": 13,
+   "calls": [
+    "decode",
+    "encode",
+    "lower",
+    "normalize",
+    "strip",
+    "sub"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.utils.normalize_sku",
+   "kind": "function",
+   "path": "shopcore/utils.py",
+   "start_line": 16,
+   "end_line": 18,
+   "calls": [
+    "strip",
+    "upper"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.utils.clamp",
+   "kind": "function",
+   "path": "shopcore/utils.py",
+   "start_line": 21,
+   "end_line": 23,
+   "calls": [
+    "max",
+    "min"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.utils.format_money",
+   "kind": "function",
+   "path": "shopcore/utils.py",
+   "start_line": 26,
+   "end_line": 28,
+   "calls": [
+    "get"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.utils.größe_bucket",
+   "kind": "function",
+   "path": "shopcore/utils.py",
+   "start_line": 31,
+   "end_line": 35,
+   "calls": []
+  },
+  {
+   "qualified_name": "shopcore.pricing.tax_rate",
+   "kind": "function",
+   "path": "shopcore/pricing.py",
+   "start_line": 11,
+   "end_line": 14,
+   "calls": [
+    "get",
+    "upper"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.pricing.apply_discount",
+   "kind": "function",
+   "path": "shopcore/pricing.py",
+   "start_line": 17,
+   "end_line": 20,
+   "calls": [
+    "clamp_value",
+    "round"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.pricing.loyalty_discount",
+   "kind": "function",
+   "path": "shopcore/pricing.py",
+   "start_line": 23,
+   "end_line": 33,
+   "calls": [
+    "float",
+    "tier"
+   ]
+  },
+  {
+   "qualified_name": "shopcore.pricing.loyalty_discount.tier",
+   "kind": "function",
+   "path": "shopcore/pricing.py",
+   "start_line": 26,
+   "end_line": 31,
+   "calls": []
+  },
+  {
+   "qualified_name": "shopcore.pricing.compute_total",
+   "kind": "function",
+   "path": "shopcore/pricing.py",
+   "start_line": 36,
+   "end_line": 40,
+   "calls": [
+    "apply_discount",
+    "gross_total",
+    "loyalty_discount",
+    "round",
+    "tax_rate"
+   ]
+  },
+  {
+   "qualified_name": "storage.cache.TTLCache",
+   "kind": "class",
+   "path": "storage/cache.py",
+   "start_line": 7,
+   "end_line": 35
+  },
+  {
+   "qualified_name": "storage.cache.TTLCache.__init__",
+   "kind": "method",
+   "path": "storage/cache.py",
+   "start_line": 10,
+   "end_line": 13,
+   "calls": []
+  },
+  {
+   "qualified_name": "storage.cache.TTLCache.get",
+   "kind": "method",
+   "path": "storage/cache.py",
+   "start_line": 15,
+   "end_line": 24,
+   "calls": [
+    "_is_expired",
+    "get",
+    "pop"
+   ]
+  },
+  {
+   "qualified_name": "storage.cache.TTLCache.set",
+   "kind": "method",
+   "path": "storage/cache.py",
+   "start_line": 26,
+   "end_line": 28,
+   "calls": [
+    "_clock"
+   ]
+  },
+  {
+   "qualified_name": "storage.cache.TTLCache._is_expired",
+   "kind": "method",
+   "path": "storage/cache.py",
+   "start_line": 30,
+   "end_line": 31,
+   "calls": [
+    "_clock"
+   ]
+  },
+  {
+   "qualified_name": "storage.cache.TTLCache.clear",
+   "kind": "method",
+   "path": "storage/cache.py",
+   "start_line": 33,
+   "end_line": 35,
+   "calls": [
+    "clear"
+   ]
+  },
+  {
+   "qualified_name": "storage.cache.memoize",
+   "kind": "function",
+   "path": "storage/cache.py",
+   "start_line": 38,
+   "end_line": 53,
+   "calls": []
+  },
+  {
+   "qualified_name": "storage.cache.memoize.decorator",
+   "kind": "function",
+   "path": "storage/cache.py",
+   "start_line": 41,
+   "end_line": 51,
+   "calls": []
+  },
+  {
+   "qualified_name": "storage.cache.memoize.decorator.wrapper",
+   "kind": "function",
+   "path": "storage/cache.py",
+   "start_line": 42,
+   "end_line": 49,
+   "calls": [
+    "func",
+    "get",
+    "set"
+   ]
+  },
+  {
+   "qualified_name": "storage.serializers.customer_to_dict",
+   "kind": "function",
+   "path": "storage/serializers.py",
+   "start_line": 8,
+   "end_line": 15,
+   "calls": []
+  },
+  {
+   "qualified_name": "storage.serializers.order_to_dict",
+   "kind": "function",
+   "path": "storage/serializers.py",
+   "start_line": 18,
+   "end_line": 28,
+   "calls": [
+    "customer_to_dict"
+   ]
+  },
+  {
+   "qualified_name": "storage.serializers.order_from_dict",
+   "kind": "function",
+   "path": "storage/serializers.py",
+   "start_line": 31,
+   "end_line": 37,
+   "calls": [
+    "Customer",
+    "LineItem",
+    "Order",
+    "append"
+   ]
+  },
+  {
+   "qualified_name": "storage.serializers.dumps",
+   "kind": "function",
+   "path": "storage/serializers.py",
+   "start_line": 40,
+   "end_line": 41,
+   "calls": [
+    "dumps",
+    "order_to_dict"
+   ]
+  },
+  {
+   "qualified_name": "storage.serializers.validate",
+   "kind": "function",
+   "path": "storage/serializers.py",
+   "start_line": 44,
+   "end_line": 46,
+   "calls": [
+    "set"
+   ]
+  },
+  {
+   "qualified_name": "storage.repository.RepositoryError",
+   "kind": "class",
+   "path": "storage/repository.py",
+   "start_line": 11,
+   "end_line": 12
+  },
+  {
+   "qualified_name": "storage.repository.OrderRepository",
+   "kind": "class",
+   "path": "storage/repository.py",
+   "start_line": 15,
+   "end_line": 48
+  },
+  {
+   "qualified_name": "storage.repository.OrderRepository.__init__",
+   "kind": "method",
+   "path": "storage/repository.py",
+   "start_line": 18,
+   "end_line": 20,
+   "calls": [
+    "TTLCache"
+   ]
+  },
+  {
+   "qualified_name": "storage.repository.OrderRepository.save",
+   "kind": "method",
+   "path": "storage/repository.py",
+   "start_line": 22,
+   "end_line": 28,
+   "calls": [
+    "RepositoryError",
+    "order_to_dict",
+    "set",
+    "str",
+    "validate"
+   ]
+  },
+  {
+   "qualified_name": "storage.repository.OrderRepository.get",
+   "kind": "method",
+   "path": "storage/repository.py",
+   "start_line": 30,
+   "end_line": 40,
+   "calls": [
+    "RepositoryError",
+    "get",
+    "order_from_dict",
+    "set",
+    "str"
+   ]
+  },
+  {
+   "qualified_name": "storage.repository.OrderRepository.list_ids",
+   "kind": "method",
+   "path": "storage/repository.py",
+   "start_line": 42,
+   "end_line": 43,
+   "calls": [
+    "sorted"
+   ]
+  },
+  {
+   "qualified_name": "storage.repository.OrderRepository.delete",
+   "kind": "method",
+   "path": "storage/repository.py",
+   "start_line": 45,
+   "end_line": 48,
+   "calls": [
+    "clear",
+    "pop"
+   ]
+  },
+  {
+   "qualified_name": "service.notifications.Notifier",
+   "kind": "class",
+   "path": "service/notifications.py",
+   "start_line": 14,
+   "end_line": 37
+  },
+  {
+   "qualified_name": "service.notifications.Notifier.__init__",
+   "kind": "method",
+   "path": "service/notifications.py",
+   "start_line": 17,
+   "end_line": 19,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.notifications.Notifier.render_receipt",
+   "kind": "method",
+   "path": "service/notifications.py",
+   "start_line": 21,
+   "end_line": 27,
+   "calls": [
+    "append",
+    "display_name",
+    "format_money",
+    "join",
+    "subtotal"
+   ]
+  },
+  {
+   "qualified_name": "service.notifications.Notifier.send",
+   "kind": "method",
+   "path": "service/notifications.py",
+   "start_line": 29,
+   "end_line": 32,
+   "calls": [
+    "append",
+    "info"
+   ]
+  },
+  {
+   "qualified_name": "service.notifications.Notifier.send_async",
+   "kind": "method",
+   "path": "service/notifications.py",
+   "start_line": 34,
+   "end_line": 37,
+   "calls": [
+    "send",
+    "sleep"
+   ]
+  },
+  {
+   "qualified_name": "service.notifications.broadcast",
+   "kind": "function",
+   "path": "service/notifications.py",
+   "start_line": 40,
+   "end_line": 43,
+   "calls": [
+    "gather",
+    "len",
+    "send_async"
+   ]
+  },
+  {
+   "qualified_name": "service.orders.OrderService",
+   "kind": "class",
+   "path": "service/orders.py",
+   "start_line": 12,
+   "end_line": 47
+  },
+  {
+   "qualified_name": "service.orders.OrderService.__init__",
+   "kind": "method",
+   "path": "service/orders.py",
+   "start_line": 15,
+   "end_line": 18,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.orders.OrderService.create_order",
+   "kind": "method",
+   "path": "service/orders.py",
+   "start_line": 20,
+   "end_line": 24,
+   "calls": [
+    "Order",
+    "_allocate_id",
+    "save"
+   ]
+  },
+  {
+   "qualified_name": "service.orders.OrderService._allocate_id",
+   "kind": "method",
+   "path": "service/orders.py",
+   "start_line": 26,
+   "end_line": 29,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.orders.OrderService.quote",
+   "kind": "method",
+   "path": "service/orders.py",
+   "start_line": 31,
+   "end_line": 34,
+   "calls": [
+    "compute_total",
+    "get"
+   ]
+  },
+  {
+   "qualified_name": "service.orders.OrderService.checkout",
+   "kind": "method",
+   "path": "service/orders.py",
+   "start_line": 36,
+   "end_line": 47,
+   "calls": [
+    "ValueError",
+    "add_points",
+    "get",
+    "gross_total",
+    "int",
+    "mark_paid",
+    "quote",
+    "render_receipt",
+    "save",
+    "send"
+   ]
+  },
+  {
+   "qualified_name": "service.api_handlers.validate",
+   "kind": "function",
+   "path": "service/api_handlers.py",
+   "start_line": 17,
+   "end_line": 19,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.api_handlers.handle_create",
+   "kind": "function",
+   "path": "service/api_handlers.py",
+   "start_line": 22,
+   "end_line": 29,
+   "calls": [
+    "Customer",
+    "create_order",
+    "error_response",
+    "join",
+    "validate"
+   ]
+  },
+  {
+   "qualified_name": "service.api_handlers.handle_checkout",
+   "kind": "function",
+   "path": "service/api_handlers.py",
+   "start_line": 32,
+   "end_line": 40,
+   "calls": [
+    "checkout",
+    "error_response",
+    "str"
+   ]
+  },
+  {
+   "qualified_name": "service.api_handlers.error_response",
+   "kind": "function",
+   "path": "service/api_handlers.py",
+   "start_line": 43,
+   "end_line": 44,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.workers.retry",
+   "kind": "function",
+   "path": "service/workers.py",
+   "start_line": 16,
+   "end_line": 33,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.workers.retry.decorator",
+   "kind": "function",
+   "path": "service/workers.py",
+   "start_line": 19,
+   "end_line": 31,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.workers.retry.decorator.wrapper",
+   "kind": "function",
+   "path": "service/workers.py",
+   "start_line": 20,
+   "end_line": 29,
+   "calls": [
+    "func",
+    "range"
+   ]
+  },
+  {
+   "qualified_name": "service.workers.cached_tax_rate",
+   "kind": "function",
+   "path": "service/workers.py",
+   "start_line": 36,
+   "end_line": 39,
+   "calls": [
+    "tax_rate"
+   ]
+  },
+  {
+   "qualified_name": "service.workers.send_daily_digest",
+   "kind": "function",
+   "path": "service/workers.py",
+   "start_line": 42,
+   "end_line": 45,
+   "calls": [
+    "broadcast"
+   ]
+  },
+  {
+   "qualified_name": "service.workers.JobRunner",
+   "kind": "class",
+   "path": "service/workers.py",
+   "start_line": 48,
+   "end_line": 60
+  },
+  {
+   "qualified_name": "service.workers.JobRunner.__init__",
+   "kind": "method",
+   "path": "service/workers.py",
+   "start_line": 51,
+   "end_line": 52,
+   "calls": [
+    "Semaphore"
+   ]
+  },
+  {
+   "qualified_name": "service.workers.JobRunner.run_one",
+   "kind": "method",
+   "path": "service/workers.py",
+   "start_line": 54,
+   "end_line": 56,
+   "calls": []
+  },
+  {
+   "qualified_name": "service.workers.JobRunner.run_all",
+   "kind": "method",
+   "path": "service/workers.py",
+   "start_line": 58,
+   "end_line": 60,
+   "calls": [
+    "gather",
+    "run_one"
+   ]
+  }
+ ],
+ "resolved_edges": [
+  [
+   "shopcore.models.Customer.handle",
+   "shopcore.utils.slugify"
+  ],
+  [
+   "shopcore.models.LineItem.__post_init__",
+   "shopcore.utils.normalize_sku"
+  ],
+  [
+   "shopcore.models.Order.add_item",
+   "shopcore.models.LineItem"
+  ],
+  [
+   "shopcore.pricing.apply_discount",
+   "shopcore.utils.clamp"
+  ],
+  [
+   "shopcore.pricing.loyalty_discount",
+   "shopcore.pricing.loyalty_discount.tier"
+  ],
+  [
+   "shopcore.pricing.compute_total",
+   "shopcore.pricing.apply_discount"
+  ],
+  [
+   "shopcore.pricing.compute_total",
+   "shopcore.pricing.loyalty_discount"
+  ],
+  [
+   "shopcore.pricing.compute_total",
+   "shopcore.pricing.tax_rate"
+  ],
+  [
+   "storage.cache.TTLCache.get",
+   "storage.cache.TTLCache._is_expired"
+  ],
+  [
+   "storage.serializers.order_to_dict",
+   "storage.serializers.customer_to_dict"
+  ],
+  [
+   "storage.serializers.order_from_dict",
+   "shopcore.models.Customer"
+  ],
+  [
+   "storage.serializers.order_from_dict",
+   "shopcore.models.Order"
+  ],
+  [
+   "storage.serializers.order_from_dict",
+   "shopcore.models.LineItem"
+  ],
+  [
+   "storage.serializers.dumps",
+   "storage.serializers.order_to_dict"
+  ],
+  [
+   "storage.repository.OrderRepository.__init__",
+   "storage.cache.TTLCache"
+  ],
+  [
+   "storage.repository.OrderRepository.save",
+   "storage.serializers.order_to_dict"
+  ],
+  [
+   "storage.repository.OrderRepository.save",
+   "storage.serializers.validate"
+  ],
+  [
+   "storage.repository.OrderRepository.save",
+   "storage.repository.RepositoryError"
+  ],
+  [
+   "storage.repository.OrderRepository.get",
+   "storage.repository.RepositoryError"
+  ],
+  [
+   "storage.repository.OrderRepository.get",
+   "storage.serializers.order_from_dict"
+  ],
+  [
+   "service.notifications.Notifier.render_receipt",
+   "shopcore.utils.format_money"
+  ],
+  [
+   "service.notifications.Notifier.send_async",
+   "service.notifications.Notifier.send"
+  ],
+  [
+   "service.orders.OrderService.create_order",
+   "shopcore.models.Order"
+  ],
+  [
+   "service.orders.OrderService.create_order",
+   "service.orders.OrderService._allocate_id"
+  ],
+  [
+   "service.orders.OrderService.quote",
+   "shopcore.pricing.compute_total"
+  ],
+  [
+   "service.orders.OrderService.checkout",
+   "service.orders.OrderService.quote"
+  ],
+  [
+   "service.api_handlers.handle_create",
+   "service.api_handlers.validate"
+  ],
+  [
+   "service.api_handlers.handle_create",
+   "service.api_handlers.error_response"
+  ],
+  [
+   "service.api_handlers.handle_create",
+   "shopcore.models.Customer"
+  ],
+  [
+   "service.api_handlers.handle_checkout",
+   "service.api_handlers.error_response"
+  ],
+  [
+   "service.workers.cached_tax_rate",
+   "shopcore.pricing.tax_rate"
+  ],
+  [
+   "service.workers.send_daily_digest",
+   "service.notifications.broadcast"
+  ],
+  [
+   "service.workers.JobRunner.run_all",
+   "service.workers.JobRunner.run_one"
+  ]
+ ]
+}

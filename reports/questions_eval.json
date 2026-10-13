@@ -1,0 +1,3196 @@
+[
+ {
+  "id": "callers:click.core.augment_usage_errors",
+  "type": "callers",
+  "question": "Which functions call `augment_usage_errors`?",
+  "symbol": "click.core.augment_usage_errors",
+  "truth": [
+   [
+    "click/core.py",
+    857,
+    910
+   ],
+   [
+    "click/core.py",
+    2730,
+    2816
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Context.invoke",
+    "click.core.Parameter.handle_parse_result"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.formatting.HelpFormatter.getvalue",
+  "type": "callers",
+  "question": "Which functions call `getvalue`?",
+  "symbol": "click.formatting.HelpFormatter.getvalue",
+  "truth": [
+   [
+    "click/core.py",
+    1093,
+    1100
+   ],
+   [
+    "click/core.py",
+    1233,
+    1240
+   ],
+   [
+    "click/testing.py",
+    596,
+    739
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Command.get_help",
+    "click.core.Command.get_usage",
+    "click.testing.CliRunner.invoke"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._compat._make_cached_stream_func.func",
+  "type": "callers",
+  "question": "Which functions call `func`?",
+  "symbol": "click._compat._make_cached_stream_func.func",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    887,
+    931
+   ],
+   [
+    "click/_winconsole.py",
+    277,
+    297
+   ],
+   [
+    "click/termui.py",
+    85,
+    105
+   ],
+   [
+    "click/types.py",
+    264,
+    278
+   ],
+   [
+    "click/utils.py",
+    42,
+    47
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._termui_impl.getchar",
+    "click._winconsole._get_windows_console_stream",
+    "click.termui._readline_prompt",
+    "click.types.FuncParamType.convert",
+    "click.utils._safecall.wrapper"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Context._make_sub_context",
+  "type": "callers",
+  "question": "Which functions call `_make_sub_context`?",
+  "symbol": "click.core.Context._make_sub_context",
+  "truth": [
+   [
+    "click/core.py",
+    857,
+    910
+   ],
+   [
+    "click/core.py",
+    1763,
+    1779
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Context.invoke",
+    "click.core.Group.to_info_dict"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.parser._OptionParser.add_argument",
+  "type": "callers",
+  "question": "Which functions call `add_argument`?",
+  "symbol": "click.parser._OptionParser.add_argument",
+  "truth": [
+   [
+    "click/core.py",
+    3774,
+    3775
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Argument.add_to_parser"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.parser._OptionParser._get_value_from_state",
+  "type": "callers",
+  "question": "Which functions call `_get_value_from_state`?",
+  "symbol": "click.parser._OptionParser._get_value_from_state",
+  "truth": [
+   [
+    "click/parser.py",
+    363,
+    388
+   ],
+   [
+    "click/parser.py",
+    390,
+    428
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.parser._OptionParser._match_long_opt",
+    "click.parser._OptionParser._match_short_opt"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.decorators.option",
+  "type": "callers",
+  "question": "Which functions call `option`?",
+  "symbol": "click.decorators.option",
+  "truth": [
+   [
+    "click/decorators.py",
+    380,
+    401
+   ],
+   [
+    "click/decorators.py",
+    404,
+    418
+   ],
+   [
+    "click/decorators.py",
+    421,
+    558
+   ],
+   [
+    "click/decorators.py",
+    561,
+    600
+   ],
+   [
+    "click/decorators.py",
+    603,
+    627
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.decorators.confirmation_option",
+    "click.decorators.custom_version_option",
+    "click.decorators.help_option",
+    "click.decorators.password_option",
+    "click.decorators.version_option"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Group.add_command",
+  "type": "callers",
+  "question": "Which functions call `add_command`?",
+  "symbol": "click.core.Group.add_command",
+  "truth": [
+   [
+    "click/core.py",
+    1830,
+    1833
+   ],
+   [
+    "click/core.py",
+    1882,
+    1885
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Group.command.decorator",
+    "click.core.Group.group.decorator"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.globals.push_context",
+  "type": "callers",
+  "question": "Which functions call `push_context`?",
+  "symbol": "click.globals.push_context",
+  "truth": [
+   [
+    "click/core.py",
+    549,
+    552
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Context.__enter__"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Parameter.type_cast_value.check_iter",
+  "type": "callers",
+  "question": "Which functions call `check_iter`?",
+  "symbol": "click.core.Parameter.type_cast_value.check_iter",
+  "truth": [
+   [
+    "click/core.py",
+    2529,
+    2583
+   ],
+   [
+    "click/core.py",
+    2559,
+    2560
+   ],
+   [
+    "click/core.py",
+    2564,
+    2578
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Parameter.type_cast_value",
+    "click.core.Parameter.type_cast_value.convert",
+    "click.core.Parameter.type_cast_value.convert"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.termui._mask_hidden_input",
+  "type": "callers",
+  "question": "Which functions call `_mask_hidden_input`?",
+  "symbol": "click.termui._mask_hidden_input",
+  "truth": [
+   [
+    "click/termui.py",
+    168,
+    286
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.termui.prompt"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Command.format_help",
+  "type": "callers",
+  "question": "Which functions call `format_help`?",
+  "symbol": "click.core.Command.format_help",
+  "truth": [
+   [
+    "click/core.py",
+    1233,
+    1240
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Command.get_help"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.parser._OptionParser._process_opts",
+  "type": "callers",
+  "question": "Which functions call `_process_opts`?",
+  "symbol": "click.parser._OptionParser._process_opts",
+  "truth": [
+   [
+    "click/parser.py",
+    327,
+    341
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.parser._OptionParser._process_args_for_options"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._termui_impl.ProgressBar.render_progress",
+  "type": "callers",
+  "question": "Which functions call `render_progress`?",
+  "symbol": "click._termui_impl.ProgressBar.render_progress",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    115,
+    118
+   ],
+   [
+    "click/_termui_impl.py",
+    128,
+    132
+   ],
+   [
+    "click/_termui_impl.py",
+    142,
+    154
+   ],
+   [
+    "click/_termui_impl.py",
+    318,
+    342
+   ],
+   [
+    "click/_termui_impl.py",
+    349,
+    380
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._termui_impl.ProgressBar.__enter__",
+    "click._termui_impl.ProgressBar.__iter__",
+    "click._termui_impl.ProgressBar.generator",
+    "click._termui_impl.ProgressBar.render_finish",
+    "click._termui_impl.ProgressBar.update"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Context.find_root",
+  "type": "callers",
+  "question": "Which functions call `find_root`?",
+  "symbol": "click.core.Context.find_root",
+  "truth": [
+   [
+    "click/decorators.py",
+    501,
+    548
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.decorators.version_option.callback"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.types.ParamType.split_envvar_value",
+  "type": "callers",
+  "question": "Which functions call `split_envvar_value`?",
+  "symbol": "click.types.ParamType.split_envvar_value",
+  "truth": [
+   [
+    "click/core.py",
+    2481,
+    2527
+   ],
+   [
+    "click/core.py",
+    2714,
+    2728
+   ],
+   [
+    "click/core.py",
+    3541,
+    3587
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Option.value_from_envvar",
+    "click.core.Parameter.consume_value",
+    "click.core.Parameter.value_from_envvar"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._termui_impl.Editor.edit_files",
+  "type": "callers",
+  "question": "Which functions call `edit_files`?",
+  "symbol": "click._termui_impl.Editor.edit_files",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    751,
+    796
+   ],
+   [
+    "click/termui.py",
+    848,
+    910
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._termui_impl.Editor.edit",
+    "click.termui.edit"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.testing.EchoingStdin._echo",
+  "type": "callers",
+  "question": "Which functions call `_echo`?",
+  "symbol": "click.testing.EchoingStdin._echo",
+  "truth": [
+   [
+    "click/testing.py",
+    51,
+    52
+   ],
+   [
+    "click/testing.py",
+    54,
+    55
+   ],
+   [
+    "click/testing.py",
+    57,
+    58
+   ],
+   [
+    "click/testing.py",
+    60,
+    61
+   ],
+   [
+    "click/testing.py",
+    63,
+    64
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.testing.EchoingStdin.__iter__",
+    "click.testing.EchoingStdin.read",
+    "click.testing.EchoingStdin.read1",
+    "click.testing.EchoingStdin.readline",
+    "click.testing.EchoingStdin.readlines"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Context._close_with_exception_info",
+  "type": "callers",
+  "question": "Which functions call `_close_with_exception_info`?",
+  "symbol": "click.core.Context._close_with_exception_info",
+  "truth": [
+   [
+    "click/core.py",
+    554,
+    566
+   ],
+   [
+    "click/core.py",
+    689,
+    694
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Context.__exit__",
+    "click.core.Context.close"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.shell_completion.BashComplete._check_version",
+  "type": "callers",
+  "question": "Which functions call `_check_version`?",
+  "symbol": "click.shell_completion.BashComplete._check_version",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    428,
+    430
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.shell_completion.BashComplete.source"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.testing.CliRunner.get_default_prog_name",
+  "type": "callers",
+  "question": "Which functions call `get_default_prog_name`?",
+  "symbol": "click.testing.CliRunner.get_default_prog_name",
+  "truth": [
+   [
+    "click/testing.py",
+    596,
+    739
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.testing.CliRunner.invoke"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._termui_impl._nullpager",
+  "type": "callers",
+  "question": "Which functions call `_nullpager`?",
+  "symbol": "click._termui_impl._nullpager",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    451,
+    493
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._termui_impl._pager_contextmanager"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Group.invoke._process_result",
+  "type": "callers",
+  "question": "Which functions call `_process_result`?",
+  "symbol": "click.core.Group.invoke._process_result",
+  "truth": [
+   [
+    "click/core.py",
+    1998,
+    2064
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Group.invoke"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._termui_impl.Editor.get_editor",
+  "type": "callers",
+  "question": "Which functions call `get_editor`?",
+  "symbol": "click._termui_impl.Editor.get_editor",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    713,
+    741
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._termui_impl.Editor.edit_files"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._compat.get_text_stdin",
+  "type": "callers",
+  "question": "Which functions call `get_text_stdin`?",
+  "symbol": "click._compat.get_text_stdin",
+  "truth": [
+   [
+    "click/_compat.py",
+    374,
+    452
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._compat.open_stream"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Option._validate",
+  "type": "callers",
+  "question": "Which functions call `_validate`?",
+  "symbol": "click.core.Option._validate",
+  "truth": [
+   [
+    "click/core.py",
+    2951,
+    3030
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Option.__init__"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.formatting.wrap_text._flush_par",
+  "type": "callers",
+  "question": "Which functions call `_flush_par`?",
+  "symbol": "click.formatting.wrap_text._flush_par",
+  "truth": [
+   [
+    "click/formatting.py",
+    31,
+    107
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.formatting.wrap_text"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.shell_completion._resolve_incomplete",
+  "type": "callers",
+  "question": "Which functions call `_resolve_incomplete`?",
+  "symbol": "click.shell_completion._resolve_incomplete",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    354,
+    366
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.shell_completion.ShellComplete.get_completions"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.testing._FDCapture.start",
+  "type": "callers",
+  "question": "Which functions call `start`?",
+  "symbol": "click.testing._FDCapture.start",
+  "truth": [
+   [
+    "click/testing.py",
+    596,
+    739
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.testing.CliRunner.invoke"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Parameter.type_cast_value",
+  "type": "callers",
+  "question": "Which functions call `type_cast_value`?",
+  "symbol": "click.core.Parameter.type_cast_value",
+  "truth": [
+   [
+    "click/core.py",
+    857,
+    910
+   ],
+   [
+    "click/core.py",
+    2603,
+    2667
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Context.invoke",
+    "click.core.Parameter.process_value"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.formatting.HelpFormatter.write_dl",
+  "type": "callers",
+  "question": "Which functions call `write_dl`?",
+  "symbol": "click.formatting.HelpFormatter.write_dl",
+  "truth": [
+   [
+    "click/core.py",
+    1295,
+    1305
+   ],
+   [
+    "click/core.py",
+    1307,
+    1317
+   ],
+   [
+    "click/core.py",
+    1956,
+    1982
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Command.format_arguments",
+    "click.core.Command.format_options",
+    "click.core.Group.format_commands"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Group.resolve_command",
+  "type": "callers",
+  "question": "Which functions call `resolve_command`?",
+  "symbol": "click.core.Group.resolve_command",
+  "truth": [
+   [
+    "click/core.py",
+    1998,
+    2064
+   ],
+   [
+    "click/shell_completion.py",
+    696,
+    754
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Group.invoke",
+    "click.shell_completion._resolve_context"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.core.Command._main_shell_completion",
+  "type": "callers",
+  "question": "Which functions call `_main_shell_completion`?",
+  "symbol": "click.core.Command._main_shell_completion",
+  "truth": [
+   [
+    "click/core.py",
+    1484,
+    1595
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Command.main"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.shell_completion._is_incomplete_option",
+  "type": "callers",
+  "question": "Which functions call `_is_incomplete_option`?",
+  "symbol": "click.shell_completion._is_incomplete_option",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    757,
+    801
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.shell_completion._resolve_incomplete"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.utils._LazyFile.close_intelligently",
+  "type": "callers",
+  "question": "Which functions call `close_intelligently`?",
+  "symbol": "click.utils._LazyFile.close_intelligently",
+  "truth": [
+   [
+    "click/utils.py",
+    198,
+    204
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.utils._LazyFile.__exit__"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.formatting.HelpFormatter.write_paragraph",
+  "type": "callers",
+  "question": "Which functions call `write_paragraph`?",
+  "symbol": "click.formatting.HelpFormatter.write_paragraph",
+  "truth": [
+   [
+    "click/core.py",
+    1277,
+    1293
+   ],
+   [
+    "click/core.py",
+    1319,
+    1326
+   ],
+   [
+    "click/formatting.py",
+    273,
+    286
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Command.format_epilog",
+    "click.core.Command.format_help_text",
+    "click.formatting.HelpFormatter.section"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.parser._split_opt",
+  "type": "callers",
+  "question": "Which functions call `_split_opt`?",
+  "symbol": "click.parser._split_opt",
+  "truth": [
+   [
+    "click/core.py",
+    2066,
+    2090
+   ],
+   [
+    "click/core.py",
+    3235,
+    3294
+   ],
+   [
+    "click/core.py",
+    3383,
+    3465
+   ],
+   [
+    "click/formatting.py",
+    302,
+    320
+   ],
+   [
+    "click/parser.py",
+    120,
+    124
+   ],
+   [
+    "click/parser.py",
+    128,
+    163
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.core.Group.resolve_command",
+    "click.core.Option._parse_decls",
+    "click.core.Option.get_help_extra",
+    "click.formatting.join_options",
+    "click.parser._Option.__init__",
+    "click.parser._normalize_opt"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.utils._posixify",
+  "type": "callers",
+  "question": "Which functions call `_posixify`?",
+  "symbol": "click.utils._posixify",
+  "truth": [
+   [
+    "click/utils.py",
+    484,
+    530
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.utils.get_app_dir"
+   ]
+  }
+ },
+ {
+  "id": "callers:click._compat.get_binary_stdin",
+  "type": "callers",
+  "question": "Which functions call `get_binary_stdin`?",
+  "symbol": "click._compat.get_binary_stdin",
+  "truth": [
+   [
+    "click/_compat.py",
+    374,
+    452
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click._compat.open_stream"
+   ]
+  }
+ },
+ {
+  "id": "callers:click.shell_completion._is_incomplete_argument",
+  "type": "callers",
+  "question": "Which functions call `_is_incomplete_argument`?",
+  "symbol": "click.shell_completion._is_incomplete_argument",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    757,
+    801
+   ]
+  ],
+  "meta": {
+   "callers": [
+    "click.shell_completion._resolve_incomplete"
+   ]
+  }
+ },
+ {
+  "id": "definition:click._compat._force_correct_text_stream",
+  "type": "definition",
+  "question": "Where is `_force_correct_text_stream` defined?",
+  "symbol": "click._compat._force_correct_text_stream",
+  "truth": [
+   [
+    "click/_compat.py",
+    241,
+    284
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.ProgressBar.update",
+  "type": "definition",
+  "question": "Where is `update` defined?",
+  "symbol": "click._termui_impl.ProgressBar.update",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    318,
+    342
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.parser._OptionParser._process_opts",
+  "type": "definition",
+  "question": "Where is `_process_opts` defined?",
+  "symbol": "click.parser._OptionParser._process_opts",
+  "truth": [
+   [
+    "click/parser.py",
+    470,
+    500
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.utils._safecall",
+  "type": "definition",
+  "question": "Where is `_safecall` defined?",
+  "symbol": "click.utils._safecall",
+  "truth": [
+   [
+    "click/utils.py",
+    36,
+    49
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._compat._AtomicFile",
+  "type": "definition",
+  "question": "Where is `_AtomicFile` defined?",
+  "symbol": "click._compat._AtomicFile",
+  "truth": [
+   [
+    "click/_compat.py",
+    455,
+    455
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.utils._PacifyFlushWrapper",
+  "type": "definition",
+  "question": "Where is `_PacifyFlushWrapper` defined?",
+  "symbol": "click.utils._PacifyFlushWrapper",
+  "truth": [
+   [
+    "click/utils.py",
+    533,
+    544
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.testing.CliRunner.isolation._patched_pdb_init",
+  "type": "definition",
+  "question": "Where is `_patched_pdb_init` defined?",
+  "symbol": "click.testing.CliRunner.isolation._patched_pdb_init",
+  "truth": [
+   [
+    "click/testing.py",
+    525,
+    560
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.exceptions.NoArgsIsHelpError",
+  "type": "definition",
+  "question": "Where is `NoArgsIsHelpError` defined?",
+  "symbol": "click.exceptions.NoArgsIsHelpError",
+  "truth": [
+   [
+    "click/exceptions.py",
+    332,
+    333
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Option.flag_activation_value",
+  "type": "definition",
+  "question": "Where is `flag_activation_value` defined?",
+  "symbol": "click.core.Option.flag_activation_value",
+  "truth": [
+   [
+    "click/core.py",
+    3041,
+    3052
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.exceptions.ClickException",
+  "type": "definition",
+  "question": "Where is `ClickException` defined?",
+  "symbol": "click.exceptions.ClickException",
+  "truth": [
+   [
+    "click/exceptions.py",
+    35,
+    42
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.Editor.get_editor",
+  "type": "definition",
+  "question": "Where is `get_editor` defined?",
+  "symbol": "click._termui_impl.Editor.get_editor",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    696,
+    711
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Context.abort",
+  "type": "definition",
+  "question": "Where is `abort` defined?",
+  "symbol": "click.core.Context.abort",
+  "truth": [
+   [
+    "click/core.py",
+    815,
+    817
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.IntParamType",
+  "type": "definition",
+  "question": "Where is `IntParamType` defined?",
+  "symbol": "click.types.IntParamType",
+  "truth": [
+   [
+    "click/types.py",
+    725,
+    727
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Group.add_command",
+  "type": "definition",
+  "question": "Where is `add_command` defined?",
+  "symbol": "click.core.Group.add_command",
+  "truth": [
+   [
+    "click/core.py",
+    1781,
+    1789
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Option._resolve_lazy_default",
+  "type": "definition",
+  "question": "Where is `_resolve_lazy_default` defined?",
+  "symbol": "click.core.Option._resolve_lazy_default",
+  "truth": [
+   [
+    "click/core.py",
+    3126,
+    3148
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._winconsole._get_text_stderr",
+  "type": "definition",
+  "question": "Where is `_get_text_stderr` defined?",
+  "symbol": "click._winconsole._get_text_stderr",
+  "truth": [
+   [
+    "click/_winconsole.py",
+    247,
+    254
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.Choice.get_invalid_choice_message",
+  "type": "definition",
+  "question": "Where is `get_invalid_choice_message` defined?",
+  "symbol": "click.types.Choice.get_invalid_choice_message",
+  "truth": [
+   [
+    "click/types.py",
+    467,
+    479
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.shell_completion.add_completion_class",
+  "type": "definition",
+  "question": "Where is `add_completion_class` defined?",
+  "symbol": "click.shell_completion.add_completion_class",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    565,
+    582
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.ProgressBar.time_per_iteration",
+  "type": "definition",
+  "question": "Where is `time_per_iteration` defined?",
+  "symbol": "click._termui_impl.ProgressBar.time_per_iteration",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    162,
+    166
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.ProgressBar.generator",
+  "type": "definition",
+  "question": "Where is `generator` defined?",
+  "symbol": "click._termui_impl.ProgressBar.generator",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    349,
+    380
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.exceptions.BadArgumentUsage",
+  "type": "definition",
+  "question": "Where is `BadArgumentUsage` defined?",
+  "symbol": "click.exceptions.BadArgumentUsage",
+  "truth": [
+   [
+    "click/exceptions.py",
+    323,
+    329
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.testing.EchoingStdin.readlines",
+  "type": "definition",
+  "question": "Where is `readlines` defined?",
+  "symbol": "click.testing.EchoingStdin.readlines",
+  "truth": [
+   [
+    "click/testing.py",
+    60,
+    61
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.testing.CliRunner.isolation",
+  "type": "definition",
+  "question": "Where is `isolation` defined?",
+  "symbol": "click.testing.CliRunner.isolation",
+  "truth": [
+   [
+    "click/testing.py",
+    398,
+    594
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl._translate_ch_to_exc",
+  "type": "definition",
+  "question": "Where is `_translate_ch_to_exc` defined?",
+  "symbol": "click._termui_impl._translate_ch_to_exc",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    869,
+    877
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.decorators.help_option.show_help",
+  "type": "definition",
+  "question": "Where is `show_help` defined?",
+  "symbol": "click.decorators.help_option.show_help",
+  "truth": [
+   [
+    "click/decorators.py",
+    612,
+    616
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.DateTime._try_to_convert_date",
+  "type": "definition",
+  "question": "Where is `_try_to_convert_date` defined?",
+  "symbol": "click.types.DateTime._try_to_convert_date",
+  "truth": [
+   [
+    "click/types.py",
+    549,
+    553
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.decorators.argument",
+  "type": "definition",
+  "question": "Where is `argument` defined?",
+  "symbol": "click.decorators.argument",
+  "truth": [
+   [
+    "click/decorators.py",
+    324,
+    349
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._textwrap._truncate_visible",
+  "type": "definition",
+  "question": "Where is `_truncate_visible` defined?",
+  "symbol": "click._textwrap._truncate_visible",
+  "truth": [
+   [
+    "click/_textwrap.py",
+    11,
+    35
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.CompositeParamType",
+  "type": "definition",
+  "question": "Where is `CompositeParamType` defined?",
+  "symbol": "click.types.CompositeParamType",
+  "truth": [
+   [
+    "click/types.py",
+    231,
+    232
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.Choice",
+  "type": "definition",
+  "question": "Where is `Choice` defined?",
+  "symbol": "click.types.Choice",
+  "truth": [
+   [
+    "click/types.py",
+    331,
+    362
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Context.forward",
+  "type": "definition",
+  "question": "Where is `forward` defined?",
+  "symbol": "click.core.Context.forward",
+  "truth": [
+   [
+    "click/core.py",
+    912,
+    929
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types._is_file_like",
+  "type": "definition",
+  "question": "Where is `_is_file_like` defined?",
+  "symbol": "click.types._is_file_like",
+  "truth": [
+   [
+    "click/types.py",
+    1035,
+    1036
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.Tuple",
+  "type": "definition",
+  "question": "Where is `Tuple` defined?",
+  "symbol": "click.types.Tuple",
+  "truth": [
+   [
+    "click/types.py",
+    1243,
+    1255
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.iter_params_for_processing.sort_key",
+  "type": "definition",
+  "question": "Where is `sort_key` defined?",
+  "symbol": "click.core.iter_params_for_processing.sort_key",
+  "truth": [
+   [
+    "click/core.py",
+    158,
+    164
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.shell_completion._resolve_incomplete",
+  "type": "definition",
+  "question": "Where is `_resolve_incomplete` defined?",
+  "symbol": "click.shell_completion._resolve_incomplete",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    757,
+    801
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types._NumberRangeBase",
+  "type": "definition",
+  "question": "Where is `_NumberRangeBase` defined?",
+  "symbol": "click.types._NumberRangeBase",
+  "truth": [
+   [
+    "click/types.py",
+    621,
+    629
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.parser._Option.takes_value",
+  "type": "definition",
+  "question": "Where is `takes_value` defined?",
+  "symbol": "click.parser._Option.takes_value",
+  "truth": [
+   [
+    "click/parser.py",
+    165,
+    167
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.exceptions.Abort",
+  "type": "definition",
+  "question": "Where is `Abort` defined?",
+  "symbol": "click.exceptions.Abort",
+  "truth": [
+   [
+    "click/exceptions.py",
+    362,
+    363
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.ParamType.split_envvar_value",
+  "type": "definition",
+  "question": "Where is `split_envvar_value` defined?",
+  "symbol": "click.types.ParamType.split_envvar_value",
+  "truth": [
+   [
+    "click/types.py",
+    194,
+    202
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Option._validate",
+  "type": "definition",
+  "question": "Where is `_validate` defined?",
+  "symbol": "click.core.Option._validate",
+  "truth": [
+   [
+    "click/core.py",
+    3150,
+    3170
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.decorators._param_memo",
+  "type": "definition",
+  "question": "Where is `_param_memo` defined?",
+  "symbol": "click.decorators._param_memo",
+  "truth": [
+   [
+    "click/decorators.py",
+    314,
+    321
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Context._close_with_exception_info",
+  "type": "definition",
+  "question": "Where is `_close_with_exception_info` defined?",
+  "symbol": "click.core.Context._close_with_exception_info",
+  "truth": [
+   [
+    "click/core.py",
+    696,
+    712
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Context._make_sub_context",
+  "type": "definition",
+  "question": "Where is `_make_sub_context` defined?",
+  "symbol": "click.core.Context._make_sub_context",
+  "truth": [
+   [
+    "click/core.py",
+    841,
+    847
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Context._default_map_has",
+  "type": "definition",
+  "question": "Where is `_default_map_has` defined?",
+  "symbol": "click.core.Context._default_map_has",
+  "truth": [
+   [
+    "click/core.py",
+    761,
+    773
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._compat._make_text_stream",
+  "type": "definition",
+  "question": "Where is `_make_text_stream` defined?",
+  "symbol": "click._compat._make_text_stream",
+  "truth": [
+   [
+    "click/_compat.py",
+    22,
+    40
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Parameter.type_cast_value.check_iter",
+  "type": "definition",
+  "question": "Where is `check_iter` defined?",
+  "symbol": "click.core.Parameter.type_cast_value.check_iter",
+  "truth": [
+   [
+    "click/core.py",
+    2539,
+    2548
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.termui.secho",
+  "type": "definition",
+  "question": "Where is `secho` defined?",
+  "symbol": "click.termui.secho",
+  "truth": [
+   [
+    "click/termui.py",
+    780,
+    811
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.ProgressBar.finish",
+  "type": "definition",
+  "question": "Where is `finish` defined?",
+  "symbol": "click._termui_impl.ProgressBar.finish",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    344,
+    347
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.ProgressBar.render_progress",
+  "type": "definition",
+  "question": "Where is `render_progress` defined?",
+  "symbol": "click._termui_impl.ProgressBar.render_progress",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    250,
+    294
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._winconsole.Py_buffer",
+  "type": "definition",
+  "question": "Where is `Py_buffer` defined?",
+  "symbol": "click._winconsole.Py_buffer",
+  "truth": [
+   [
+    "click/_winconsole.py",
+    88,
+    101
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._winconsole.get_buffer",
+  "type": "definition",
+  "question": "Where is `get_buffer` defined?",
+  "symbol": "click._winconsole.get_buffer",
+  "truth": [
+   [
+    "click/_winconsole.py",
+    106,
+    116
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._compat.get_best_encoding",
+  "type": "definition",
+  "question": "Where is `get_best_encoding` defined?",
+  "symbol": "click._compat.get_best_encoding",
+  "truth": [
+   [
+    "click/_compat.py",
+    51,
+    56
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.parser._OptionParser._match_long_opt",
+  "type": "definition",
+  "question": "Where is `_match_long_opt` defined?",
+  "symbol": "click.parser._OptionParser._match_long_opt",
+  "truth": [
+   [
+    "click/parser.py",
+    363,
+    388
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.testing._FDCapture.stop",
+  "type": "definition",
+  "question": "Where is `stop` defined?",
+  "symbol": "click.testing._FDCapture.stop",
+  "truth": [
+   [
+    "click/testing.py",
+    105,
+    114
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core._complete_visible_commands",
+  "type": "definition",
+  "question": "Where is `_complete_visible_commands` defined?",
+  "symbol": "click.core._complete_visible_commands",
+  "truth": [
+   [
+    "click/core.py",
+    63,
+    79
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.testing._FDCapture.start",
+  "type": "definition",
+  "question": "Where is `start` defined?",
+  "symbol": "click.testing._FDCapture.start",
+  "truth": [
+   [
+    "click/testing.py",
+    100,
+    103
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Option._infer_flag_kind",
+  "type": "definition",
+  "question": "Where is `_infer_flag_kind` defined?",
+  "symbol": "click.core.Option._infer_flag_kind",
+  "truth": [
+   [
+    "click/core.py",
+    3054,
+    3085
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Context.set_parameter_source",
+  "type": "definition",
+  "question": "Where is `set_parameter_source` defined?",
+  "symbol": "click.core.Context.set_parameter_source",
+  "truth": [
+   [
+    "click/core.py",
+    931,
+    938
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.TupleInfoDict",
+  "type": "definition",
+  "question": "Where is `TupleInfoDict` defined?",
+  "symbol": "click.types.TupleInfoDict",
+  "truth": [
+   [
+    "click/types.py",
+    1239,
+    1240
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.shell_completion.CompletionItem",
+  "type": "definition",
+  "question": "Where is `CompletionItem` defined?",
+  "symbol": "click.shell_completion.CompletionItem",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    67,
+    86
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.Path",
+  "type": "definition",
+  "question": "Where is `Path` defined?",
+  "symbol": "click.types.Path",
+  "truth": [
+   [
+    "click/types.py",
+    1048,
+    1091
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core._check_nested_chain",
+  "type": "definition",
+  "question": "Where is `_check_nested_chain` defined?",
+  "symbol": "click.core._check_nested_chain",
+  "truth": [
+   [
+    "click/core.py",
+    82,
+    99
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.shell_completion.split_arg_string",
+  "type": "definition",
+  "question": "Where is `split_arg_string` defined?",
+  "symbol": "click.shell_completion.split_arg_string",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    603,
+    636
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.formatting.HelpFormatter.write_dl",
+  "type": "definition",
+  "question": "Where is `write_dl` defined?",
+  "symbol": "click.formatting.HelpFormatter.write_dl",
+  "truth": [
+   [
+    "click/formatting.py",
+    229,
+    271
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.ProgressBar.make_step",
+  "type": "definition",
+  "question": "Where is `make_step` defined?",
+  "symbol": "click._termui_impl.ProgressBar.make_step",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    296,
+    316
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._textwrap.TextWrapper._handle_long_word",
+  "type": "definition",
+  "question": "Where is `_handle_long_word` defined?",
+  "symbol": "click._textwrap.TextWrapper._handle_long_word",
+  "truth": [
+   [
+    "click/_textwrap.py",
+    48,
+    64
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.testing.CliRunner.isolated_filesystem",
+  "type": "definition",
+  "question": "Where is `isolated_filesystem` defined?",
+  "symbol": "click.testing.CliRunner.isolated_filesystem",
+  "truth": [
+   [
+    "click/testing.py",
+    741,
+    798
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.utils.echo",
+  "type": "definition",
+  "question": "Where is `echo` defined?",
+  "symbol": "click.utils.echo",
+  "truth": [
+   [
+    "click/utils.py",
+    252,
+    346
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.exceptions.NoSuchCommand",
+  "type": "definition",
+  "question": "Where is `NoSuchCommand` defined?",
+  "symbol": "click.exceptions.NoSuchCommand",
+  "truth": [
+   [
+    "click/exceptions.py",
+    268,
+    275
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._compat._force_correct_text_writer",
+  "type": "definition",
+  "question": "Where is `_force_correct_text_writer` defined?",
+  "symbol": "click._compat._force_correct_text_writer",
+  "truth": [
+   [
+    "click/_compat.py",
+    303,
+    316
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core._MultiCommand",
+  "type": "definition",
+  "question": "Where is `_MultiCommand` defined?",
+  "symbol": "click.core._MultiCommand",
+  "truth": [
+   [
+    "click/core.py",
+    2112,
+    2116
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Group",
+  "type": "definition",
+  "question": "Where is `Group` defined?",
+  "symbol": "click.core.Group",
+  "truth": [
+   [
+    "click/core.py",
+    1649,
+    1706
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.formatting.wrap_text",
+  "type": "definition",
+  "question": "Where is `wrap_text` defined?",
+  "symbol": "click.formatting.wrap_text",
+  "truth": [
+   [
+    "click/formatting.py",
+    31,
+    107
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.core.Command.get_params",
+  "type": "definition",
+  "question": "Where is `get_params` defined?",
+  "symbol": "click.core.Command.get_params",
+  "truth": [
+   [
+    "click/core.py",
+    1102,
+    1156
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.shell_completion.ShellComplete.complete",
+  "type": "definition",
+  "question": "Where is `complete` defined?",
+  "symbol": "click.shell_completion.ShellComplete.complete",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    376,
+    386
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl.Editor.edit_files",
+  "type": "definition",
+  "question": "Where is `edit_files` defined?",
+  "symbol": "click._termui_impl.Editor.edit_files",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    713,
+    741
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._termui_impl._pager_contextmanager",
+  "type": "definition",
+  "question": "Where is `_pager_contextmanager` defined?",
+  "symbol": "click._termui_impl._pager_contextmanager",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    451,
+    493
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._winconsole._get_text_stdout",
+  "type": "definition",
+  "question": "Where is `_get_text_stdout` defined?",
+  "symbol": "click._winconsole._get_text_stdout",
+  "truth": [
+   [
+    "click/_winconsole.py",
+    237,
+    244
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click._compat.get_text_stderr",
+  "type": "definition",
+  "question": "Where is `get_text_stderr` defined?",
+  "symbol": "click._compat.get_text_stderr",
+  "truth": [
+   [
+    "click/_compat.py",
+    354,
+    358
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "definition:click.types.ParamType",
+  "type": "definition",
+  "question": "Where is `ParamType` defined?",
+  "symbol": "click.types.ParamType",
+  "truth": [
+   [
+    "click/types.py",
+    54,
+    109
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.ParamType.fail",
+  "type": "docstring_masked",
+  "question": "Helper method to with an invalid value message.",
+  "symbol": "click.types.ParamType.fail",
+  "truth": [
+   [
+    "click/types.py",
+    204,
+    211
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.termui.getchar",
+  "type": "docstring_masked",
+  "question": "Fetches a single character from the terminal and returns it.",
+  "symbol": "click.termui.getchar",
+  "truth": [
+   [
+    "click/termui.py",
+    947,
+    974
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.Choice._normalized_mapping",
+  "type": "docstring_masked",
+  "question": "Returns where keys are the original choices and the values are the values that are accepted via the command line.",
+  "symbol": "click.types.Choice._normalized_mapping",
+  "truth": [
+   [
+    "click/types.py",
+    377,
+    393
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils._LazyFile.open",
+  "type": "docstring_masked",
+  "question": "Opens the file if it's not yet.",
+  "symbol": "click.utils._LazyFile.open",
+  "truth": [
+   [
+    "click/utils.py",
+    165,
+    181
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.collect_usage_pieces",
+  "type": "docstring_masked",
+  "question": "Returns all the that go into the line and returns it as a list of strings.",
+  "symbol": "click.core.Command.collect_usage_pieces",
+  "truth": [
+   [
+    "click/core.py",
+    1166,
+    1175
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._termui_impl.Editor.edit_files",
+  "type": "docstring_masked",
+  "question": "Open in the user's editor.",
+  "symbol": "click._termui_impl.Editor.edit_files",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    713,
+    741
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.make_parser",
+  "type": "docstring_masked",
+  "question": "Creates the underlying option for this command.",
+  "symbol": "click.core.Command.make_parser",
+  "truth": [
+   [
+    "click/core.py",
+    1226,
+    1231
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils.open_file",
+  "type": "docstring_masked",
+  "question": "a with extra behavior to handle ``'-'`` to indicate a standard stream, lazy on write, and atomic write.",
+  "symbol": "click.utils.open_file",
+  "truth": [
+   [
+    "click/utils.py",
+    393,
+    439
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.meta",
+  "type": "docstring_masked",
+  "question": "This is a dictionary which is shared with all the contexts that are nested.",
+  "symbol": "click.core.Context.meta",
+  "truth": [
+   [
+    "click/core.py",
+    606,
+    632
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.Choice.convert",
+  "type": "docstring_masked",
+  "question": "For a given value from the parser, normalize it and find its matching normalized value in the list of choices.",
+  "symbol": "click.types.Choice.convert",
+  "truth": [
+   [
+    "click/types.py",
+    443,
+    465
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.testing.CliRunner.make_env",
+  "type": "docstring_masked",
+  "question": "Returns the environment overrides for invoking a script.",
+  "symbol": "click.testing.CliRunner.make_env",
+  "truth": [
+   [
+    "click/testing.py",
+    389,
+    396
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.make_context",
+  "type": "docstring_masked",
+  "question": "This function when given an info name and arguments will kick off the parsing and create a new.",
+  "symbol": "click.core.Command.make_context",
+  "truth": [
+   [
+    "click/core.py",
+    1328,
+    1363
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.formatting.HelpFormatter.section",
+  "type": "docstring_masked",
+  "question": "Helpful context manager that writes a paragraph, a heading, and the indents.",
+  "symbol": "click.formatting.HelpFormatter.section",
+  "truth": [
+   [
+    "click/formatting.py",
+    273,
+    286
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.format_options",
+  "type": "docstring_masked",
+  "question": "Writes all the into the formatter if they exist.",
+  "symbol": "click.core.Command.format_options",
+  "truth": [
+   [
+    "click/core.py",
+    1295,
+    1305
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.decorators.pass_meta_key",
+  "type": "docstring_masked",
+  "question": "Create a decorator that passes a from as the first argument to the decorated function.",
+  "symbol": "click.decorators.pass_meta_key",
+  "truth": [
+   [
+    "click/decorators.py",
+    100,
+    130
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.invoke",
+  "type": "docstring_masked",
+  "question": "Given a context, this invokes the attached callback (if it exists) in the right way.",
+  "symbol": "click.core.Command.invoke",
+  "truth": [
+   [
+    "click/core.py",
+    1401,
+    1415
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._termui_impl._less_uses_raw_mode",
+  "type": "docstring_masked",
+  "question": "Detect a request in a invocation.",
+  "symbol": "click._termui_impl._less_uses_raw_mode",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    520,
+    545
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils._expand_args",
+  "type": "docstring_masked",
+  "question": "Simulate Unix shell expansion with Python functions.",
+  "symbol": "click.utils._expand_args",
+  "truth": [
+   [
+    "click/utils.py",
+    617,
+    666
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._compat.is_ascii_encoding",
+  "type": "docstring_masked",
+  "question": "Checks if a given.",
+  "symbol": "click._compat.is_ascii_encoding",
+  "truth": [
+   [
+    "click/_compat.py",
+    43,
+    48
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.scope",
+  "type": "docstring_masked",
+  "question": "This helper method can be used with the context object to promote it to the current thread local (see :func:`get_current_context`).",
+  "symbol": "click.core.Context.scope",
+  "truth": [
+   [
+    "click/core.py",
+    568,
+    604
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.make_formatter",
+  "type": "docstring_masked",
+  "question": "Creates the for the help and usage output.",
+  "symbol": "click.core.Context.make_formatter",
+  "truth": [
+   [
+    "click/core.py",
+    634,
+    646
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils._make_default_short_help",
+  "type": "docstring_masked",
+  "question": "Returns a condensed version of string.",
+  "symbol": "click.utils._make_default_short_help",
+  "truth": [
+   [
+    "click/utils.py",
+    62,
+    112
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.shell_completion._is_incomplete_argument",
+  "type": "docstring_masked",
+  "question": "Determine if the given parameter an that can still accept values.",
+  "symbol": "click.shell_completion._is_incomplete_argument",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    639,
+    659
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Group.format_commands",
+  "type": "docstring_masked",
+  "question": "Extra methods for multi methods that adds all the after the options.",
+  "symbol": "click.core.Group.format_commands",
+  "truth": [
+   [
+    "click/core.py",
+    1956,
+    1982
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._textwrap.TextWrapper._wrap_chunks",
+  "type": "docstring_masked",
+  "question": "counting widths in visible characters.",
+  "symbol": "click._textwrap.TextWrapper._wrap_chunks",
+  "truth": [
+   [
+    "click/_textwrap.py",
+    66,
+    162
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.ParamType.to_info_dict",
+  "type": "docstring_masked",
+  "question": "Gather information that could be useful for a tool generating user-facing documentation.",
+  "symbol": "click.types.ParamType.to_info_dict",
+  "truth": [
+   [
+    "click/types.py",
+    111,
+    130
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.termui.secho",
+  "type": "docstring_masked",
+  "question": "This function combines :func:`echo` and :func:`style` into one call.",
+  "symbol": "click.termui.secho",
+  "truth": [
+   [
+    "click/termui.py",
+    780,
+    811
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.formatting.wrap_text",
+  "type": "docstring_masked",
+  "question": "A helper function that intelligently wraps.",
+  "symbol": "click.formatting.wrap_text",
+  "truth": [
+   [
+    "click/formatting.py",
+    31,
+    107
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.get_help",
+  "type": "docstring_masked",
+  "question": "Formats the into a string and returns it.",
+  "symbol": "click.core.Command.get_help",
+  "truth": [
+   [
+    "click/core.py",
+    1233,
+    1240
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Option.prompt_for_value",
+  "type": "docstring_masked",
+  "question": "This is an alternative flow that can be activated in the full processing if a does not exist.",
+  "symbol": "click.core.Option.prompt_for_value",
+  "truth": [
+   [
+    "click/core.py",
+    3467,
+    3515
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command._main_shell_completion",
+  "type": "docstring_masked",
+  "question": "Check if the is asking for tab process that, then exit early.",
+  "symbol": "click.core.Command._main_shell_completion",
+  "truth": [
+   [
+    "click/core.py",
+    1597,
+    1627
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Group.result_callback",
+  "type": "docstring_masked",
+  "question": "Adds a to the command.",
+  "symbol": "click.core.Group.result_callback",
+  "truth": [
+   [
+    "click/core.py",
+    1892,
+    1935
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils.echo",
+  "type": "docstring_masked",
+  "question": "Print a message and newline to stdout or a file.",
+  "symbol": "click.utils.echo",
+  "truth": [
+   [
+    "click/utils.py",
+    252,
+    346
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Parameter.to_info_dict",
+  "type": "docstring_masked",
+  "question": "Gather information that could be useful for a tool generating user-facing documentation.",
+  "symbol": "click.core.Parameter.to_info_dict",
+  "truth": [
+   [
+    "click/core.py",
+    2381,
+    2404
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.decorators.help_option",
+  "type": "docstring_masked",
+  "question": "Pre-configured which immediately prints the page and exits the program.",
+  "symbol": "click.decorators.help_option",
+  "truth": [
+   [
+    "click/decorators.py",
+    603,
+    627
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.globals.resolve_color_default",
+  "type": "docstring_masked",
+  "question": "Internal helper to get the value of the flag.",
+  "symbol": "click.globals.resolve_color_default",
+  "truth": [
+   [
+    "click/globals.py",
+    54,
+    67
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.get_usage",
+  "type": "docstring_masked",
+  "question": "Helper method to formatted string for the current context and command.",
+  "symbol": "click.core.Context.get_usage",
+  "truth": [
+   [
+    "click/core.py",
+    829,
+    833
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.ParamType.convert",
+  "type": "docstring_masked",
+  "question": "the value to the correct type.",
+  "symbol": "click.types.ParamType.convert",
+  "truth": [
+   [
+    "click/types.py",
+    168,
+    192
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.shell_completion.shell_complete",
+  "type": "docstring_masked",
+  "question": "Perform completion for the given CLI program.",
+  "symbol": "click.shell_completion.shell_complete",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    19,
+    55
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.shell_completion.ShellComplete.get_completion_args",
+  "type": "docstring_masked",
+  "question": "Use the env vars defined by the shell script to return a tuple of incomplete``.",
+  "symbol": "click.shell_completion.ShellComplete.get_completion_args",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    347,
+    352
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._termui_impl._nullpager",
+  "type": "docstring_masked",
+  "question": "Simply print unformatted text.",
+  "symbol": "click._termui_impl._nullpager",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    670,
+    680
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.Choice.get_missing_message",
+  "type": "docstring_masked",
+  "question": "shown when no choice is passed.",
+  "symbol": "click.types.Choice.get_missing_message",
+  "truth": [
+   [
+    "click/types.py",
+    433,
+    441
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils._LazyFile.close_intelligently",
+  "type": "docstring_masked",
+  "question": "This function only closes the file if it was opened by the lazy file wrapper.",
+  "symbol": "click.utils._LazyFile.close_intelligently",
+  "truth": [
+   [
+    "click/utils.py",
+    188,
+    193
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.with_resource",
+  "type": "docstring_masked",
+  "question": "Register a as if it were used in a statement.",
+  "symbol": "click.core.Context.with_resource",
+  "truth": [
+   [
+    "click/core.py",
+    648,
+    675
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.Choice.get_invalid_choice_message",
+  "type": "docstring_masked",
+  "question": "the error when the given is.",
+  "symbol": "click.types.Choice.get_invalid_choice_message",
+  "truth": [
+   [
+    "click/types.py",
+    467,
+    479
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.decorators.make_pass_decorator",
+  "type": "docstring_masked",
+  "question": "Given an object type this creates a that will work similar to but instead of passing the object of the current context, it will find the innermost context of type :func:`object_type`.",
+  "symbol": "click.decorators.make_pass_decorator",
+  "truth": [
+   [
+    "click/decorators.py",
+    51,
+    97
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.shell_completion.ShellComplete.get_completions",
+  "type": "docstring_masked",
+  "question": "Determine the context and last complete command or parameter from the complete args.",
+  "symbol": "click.shell_completion.ShellComplete.get_completions",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    354,
+    366
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.find_root",
+  "type": "docstring_masked",
+  "question": "Finds the outermost context.",
+  "symbol": "click.core.Context.find_root",
+  "truth": [
+   [
+    "click/core.py",
+    733,
+    738
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Group.add_command",
+  "type": "docstring_masked",
+  "question": "Registers another with this group.",
+  "symbol": "click.core.Group.add_command",
+  "truth": [
+   [
+    "click/core.py",
+    1781,
+    1789
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._termui_impl._tempfilepager",
+  "type": "docstring_masked",
+  "question": "Page through text by invoking a program on a temporary file.",
+  "symbol": "click._termui_impl._tempfilepager",
+  "truth": [
+   [
+    "click/_termui_impl.py",
+    635,
+    667
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.exit",
+  "type": "docstring_masked",
+  "question": "Exits the application with a given code.",
+  "symbol": "click.core.Context.exit",
+  "truth": [
+   [
+    "click/core.py",
+    819,
+    827
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.fail",
+  "type": "docstring_masked",
+  "question": "Aborts the execution of the program with a specific error message.",
+  "symbol": "click.core.Context.fail",
+  "truth": [
+   [
+    "click/core.py",
+    807,
+    813
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.decorators.confirmation_option",
+  "type": "docstring_masked",
+  "question": "Add a ``--yes`` which shows a prompt before continuing if not passed.",
+  "symbol": "click.decorators.confirmation_option",
+  "truth": [
+   [
+    "click/decorators.py",
+    380,
+    401
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Option.get_default",
+  "type": "docstring_masked",
+  "question": "Return the value for this option.",
+  "symbol": "click.core.Option.get_default",
+  "truth": [
+   [
+    "click/core.py",
+    3195,
+    3227
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.utils.format_filename",
+  "type": "docstring_masked",
+  "question": "a as a string for display.",
+  "symbol": "click.utils.format_filename",
+  "truth": [
+   [
+    "click/utils.py",
+    442,
+    481
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.parser._OptionParser.add_option",
+  "type": "docstring_masked",
+  "question": "Adds a new named `dest` to the parser.",
+  "symbol": "click.parser._OptionParser.add_option",
+  "truth": [
+   [
+    "click/parser.py",
+    265,
+    288
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.forward",
+  "type": "docstring_masked",
+  "question": "Similar to :meth:`invoke` but fills in default keyword arguments from the current context if the other command expects it.",
+  "symbol": "click.core.Context.forward",
+  "truth": [
+   [
+    "click/core.py",
+    912,
+    929
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._compat._wrap_io_open",
+  "type": "docstring_masked",
+  "question": "Handles not passing ``encoding`` and ``errors`` in binary mode.",
+  "symbol": "click._compat._wrap_io_open",
+  "truth": [
+   [
+    "click/_compat.py",
+    361,
+    371
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.Choice.shell_complete",
+  "type": "docstring_masked",
+  "question": "choices that start with the incomplete value.",
+  "symbol": "click.types.Choice.shell_complete",
+  "truth": [
+   [
+    "click/types.py",
+    484,
+    504
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.termui.clear",
+  "type": "docstring_masked",
+  "question": "Clears the terminal screen.",
+  "symbol": "click.termui.clear",
+  "truth": [
+   [
+    "click/termui.py",
+    602,
+    613
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.termui.launch",
+  "type": "docstring_masked",
+  "question": "This function launches the given URL (or filename) in the default viewer application for this file type.",
+  "symbol": "click.termui.launch",
+  "truth": [
+   [
+    "click/termui.py",
+    913,
+    939
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.parser._unpack_args",
+  "type": "docstring_masked",
+  "question": "Given an iterable of arguments and an iterable of nargs specifications, it returns a tuple with all the unpacked arguments at the first index and all remaining arguments as the second.",
+  "symbol": "click.parser._unpack_args",
+  "truth": [
+   [
+    "click/parser.py",
+    51,
+    108
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Parameter.handle_parse_result",
+  "type": "docstring_masked",
+  "question": "Process the value produced by the parser from user input.",
+  "symbol": "click.core.Parameter.handle_parse_result",
+  "truth": [
+   [
+    "click/core.py",
+    2730,
+    2816
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.testing.Result.stdout",
+  "type": "docstring_masked",
+  "question": "The standard output as unicode string.",
+  "symbol": "click.testing.Result.stdout",
+  "truth": [
+   [
+    "click/testing.py",
+    294,
+    299
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Option.is_bool_flag",
+  "type": "docstring_masked",
+  "question": "``True`` when this option a with a boolean type.",
+  "symbol": "click.core.Option.is_bool_flag",
+  "truth": [
+   [
+    "click/core.py",
+    3032,
+    3039
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.shell_completion.ShellComplete.format_completion",
+  "type": "docstring_masked",
+  "question": "a item into the form recognized by the shell script.",
+  "symbol": "click.shell_completion.ShellComplete.format_completion",
+  "truth": [
+   [
+    "click/shell_completion.py",
+    368,
+    374
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.ensure_object",
+  "type": "docstring_masked",
+  "question": "Like but sets the innermost to a new instance of if it does not exist.",
+  "symbol": "click.core.Context.ensure_object",
+  "truth": [
+   [
+    "click/core.py",
+    752,
+    759
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core._format_deprecated_suffix",
+  "type": "docstring_masked",
+  "question": "Return the trailing reason for a ``DeprecationWarning`` message, prefixed with a space, or an empty string when no reason was given.",
+  "symbol": "click.core._format_deprecated_suffix",
+  "truth": [
+   [
+    "click/core.py",
+    110,
+    116
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Context.get_help",
+  "type": "docstring_masked",
+  "question": "Helper method to formatted page for the current context and command.",
+  "symbol": "click.core.Context.get_help",
+  "truth": [
+   [
+    "click/core.py",
+    835,
+    839
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types.ParamType.split_envvar_value",
+  "type": "docstring_masked",
+  "question": "Given a from an environment variable this splits it up into small chunks depending on the defined list splitter.",
+  "symbol": "click.types.ParamType.split_envvar_value",
+  "truth": [
+   [
+    "click/types.py",
+    194,
+    202
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.formatting.join_options",
+  "type": "docstring_masked",
+  "question": "Given a list of option strings this joins them in the most appropriate way and returns them in the form ``(formatted_string, any_prefix_is_slash)`` where the second item in the tuple is a flag that indicates if any of the option prefixes was a slash.",
+  "symbol": "click.formatting.join_options",
+  "truth": [
+   [
+    "click/formatting.py",
+    302,
+    320
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.augment_usage_errors",
+  "type": "docstring_masked",
+  "question": "Context manager that attaches extra information to exceptions.",
+  "symbol": "click.core.augment_usage_errors",
+  "truth": [
+   [
+    "click/core.py",
+    123,
+    139
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.shell_complete",
+  "type": "docstring_masked",
+  "question": "Return a list of completions for the incomplete value.",
+  "symbol": "click.core.Command.shell_complete",
+  "truth": [
+   [
+    "click/core.py",
+    1417,
+    1462
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Command.format_arguments",
+  "type": "docstring_masked",
+  "question": "Writes the that have a help record into the formatter.",
+  "symbol": "click.core.Command.format_arguments",
+  "truth": [
+   [
+    "click/core.py",
+    1307,
+    1317
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Parameter.get_error_hint",
+  "type": "docstring_masked",
+  "question": "a stringified version of the param for use in messages to indicate which param caused the.",
+  "symbol": "click.core.Parameter.get_error_hint",
+  "truth": [
+   [
+    "click/core.py",
+    2824,
+    2832
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.decorators.custom_version_option",
+  "type": "docstring_masked",
+  "question": "Add a whose output is produced by ``callback``.",
+  "symbol": "click.decorators.custom_version_option",
+  "truth": [
+   [
+    "click/decorators.py",
+    561,
+    600
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click._compat._is_compatible_text_stream",
+  "type": "docstring_masked",
+  "question": "Check if a encoding and errors attributes are with the desired values.",
+  "symbol": "click._compat._is_compatible_text_stream",
+  "truth": [
+   [
+    "click/_compat.py",
+    230,
+    238
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.core.Option._infer_flag_kind",
+  "type": "docstring_masked",
+  "question": "Resolve and the parser hint.",
+  "symbol": "click.core.Option._infer_flag_kind",
+  "truth": [
+   [
+    "click/core.py",
+    3054,
+    3085
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.types._guess_type",
+  "type": "docstring_masked",
+  "question": "Infer a from *ty* or *default*.",
+  "symbol": "click.types._guess_type",
+  "truth": [
+   [
+    "click/types.py",
+    1296,
+    1328
+   ]
+  ],
+  "meta": {}
+ },
+ {
+  "id": "docstring_masked:click.testing.CliRunner.isolation",
+  "type": "docstring_masked",
+  "question": "A context manager that sets up the for invoking of a command line tool.",
+  "symbol": "click.testing.CliRunner.isolation",
+  "truth": [
+   [
+    "click/testing.py",
+    398,
+    594
+   ]
+  ],
+  "meta": {}
+ }
+]

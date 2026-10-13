@@ -1,0 +1,15 @@
+.venv/
+data/
+__pycache__/
+logs/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+skills.md
+CLAUDE.md
+.coderag/
+.env
+.streamlit/secrets.toml
+.DS_Store
+*.db

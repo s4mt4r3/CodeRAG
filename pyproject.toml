@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coderag"
+version = "0.1.0"
+description = "Code-aware Q&A over Python repos: AST-aware chunking, hybrid retrieval, a tool-using agent, verified citations."
+requires-python = ">=3.11"
+dependencies = [
+    "tree-sitter",
+    "tree-sitter-python",
+    "numpy",
+    "anthropic",
+    "fastapi",
+    "uvicorn",
+    "typer",
+    "httpx",
+]
+
+[project.optional-dependencies]
+# Local embedding model for hybrid retrieval and the eval suite (large: onnxruntime).
+embed = ["fastembed"]
+app = ["streamlit"]
+
+[project.scripts]
+coderag = "coderag.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["tests/fixtures", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests", "."]
+addopts = "--strict-markers -p no:cacheprovider"
+markers = [
+    "live: calls the real Anthropic API; skipped unless ANTHROPIC_API_KEY is set",
+    "eval: uses the real local embedder and/or data/eval_repo",
+    "claim: non-gating improvement claims (run via make claims)",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["coderag", "conftest", "helpers"]

@@ -1,0 +1,35 @@
+{
+  "300": {
+    "chunks": 740,
+    "split_pieces": 186,
+    "partial": 1,
+    "kinds": {
+      "module": 33,
+      "function": 182,
+      "class": 92,
+      "method": 433
+    }
+  },
+  "400": {
+    "chunks": 694,
+    "split_pieces": 110,
+    "partial": 0,
+    "kinds": {
+      "module": 27,
+      "function": 168,
+      "class": 88,
+      "method": 411
+    }
+  },
+  "600": {
+    "chunks": 660,
+    "split_pieces": 51,
+    "partial": 0,
+    "kinds": {
+      "module": 22,
+      "function": 159,
+      "class": 85,
+      "method": 394
+    }
+  }
+}

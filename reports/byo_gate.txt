@@ -1,0 +1,19 @@
+.venv/bin/python -m ruff check .
+All checks passed!
+.venv/bin/python -m pytest -m "not live and not eval and not claim" -q
+........................................................................ [ 21%]
+........................................................................ [ 43%]
+........................................................................ [ 65%]
+........................................................................ [ 87%]
+........................................                                 [100%]
+328 passed, 26 deselected in 12.58s
+.venv/bin/python -m pytest -m eval -q; rc=$?; if [ $rc -eq 5 ]; then echo "no eval tests collected"; exit 0; fi; exit $rc
+................                                                         [100%]
+16 passed, 338 deselected in 10.13s
+frozen check OK (47 files, 14 floors)
+audit OK
+sssssss                                                                  [100%]
+=========================== short test summary info ============================
+SKIPPED [6] tests/test_byo_live.py:28: ANTHROPIC_API_KEY not set
+SKIPPED [1] tests/test_m7_live.py:16: ANTHROPIC_API_KEY not set
+7 skipped in 0.14s
